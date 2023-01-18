@@ -1,0 +1,28 @@
+//colors
+$color-primary-light: #01c0f4;
+$color-primary: #00a2ff;
+$color-background-light: rgb(38, 109, 255);
+$color-background-dark: rgb(28, 80, 186);
+
+$color-text-grey: #4d4c4c;
+$color-white: #f4f4f4;
+
+$margin-left-sm: 3rem;
+
+//fonts
+
+$font-primary: Roboto;
+$font-header: Montserrat;
+
+.mb-sm {
+  margin-bottom: 2rem;
+}
+.mb-md {
+  margin-bottom: 3rem;
+}
+.mb-lg {
+  margin-bottom: 4rem;
+}
+.mb-hg {
+  margin-bottom: 8rem;
+}
