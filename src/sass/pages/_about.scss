@@ -1,3 +1,65 @@
+.sobre-nosotros {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-row: 2 span 1;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(3, min-content);
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  row-gap: 10rem;
+  background-color: $color-background;
+  color: $color-tertiary;
+
+  &__heading {
+  }
+
+  &__card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(min-content, 1fr);
+    grid-column: 2 / -2;
+    gap: 3.5rem;
+
+    &--experiencia {
+      grid-column: 1 / 2;
+      grid-row: 1;
+      background-color: $color-background;
+      border-radius: 1rem;
+    }
+
+    &--tecnologia {
+      grid-column: 2 / 3;
+      grid-row: 1;
+      background-color: $color-background;
+
+      border-radius: 1rem;
+    }
+
+    &--compartir {
+      grid-column: 3 / 4;
+      grid-row: 1;
+      background-color: $color-background;
+
+      border-radius: 1rem;
+    }
+  }
+
+  &__cta {
+    grid-column: 1 / -1;
+    display: flex;
+  }
+}
+
+.gradient-box {
+  // height: auto;
+  margin: auto;
+  background: linear-gradient(to right, $color-primary, $color-tertiary);
+  // background-clip: padding-box;
+  padding: 2px;
+
+  border-radius: 1rem;
+}
+
 // .about {
 //   background-color: $color-white;
 //   display: grid;

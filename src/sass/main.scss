@@ -2,15 +2,14 @@
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
-@import "base/animations";
 @import "base/base";
+@import "base/animations";
 @import "base/typography";
+@import "base/reset";
 
-@import "components/button";
-@import "components/card";
-@import "components/cover";
-@import "components/form";
 @import "components/navbar";
+@import "components/button";
+@import "components/icons";
 @import "components/popup";
 
 @import "layout/grid";
@@ -18,5 +17,8 @@
 @import "layout/footer";
 
 @import "pages/home";
+@import "pages/about";
+@import "pages/servicios";
+@import "pages/contact";
 
 // @import "vendors/_iconfont.css";

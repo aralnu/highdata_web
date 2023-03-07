@@ -1,0 +1,85 @@
+.contacto {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
+  background-color: $color-background;
+  background-image: linear-gradient(
+    to bottom,
+    rgba($color-black, 0.4),
+    rgba($color-black, 0.1)
+  );
+  padding-top: 12rem;
+  justify-items: center;
+
+  &__text {
+    grid-column: 1 / -1;
+  }
+
+  &__form {
+    display: grid;
+    grid-column: 5 / -5;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba($color-white, 0.1);
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    padding: 6rem;
+    padding-top: 4rem;
+    border-radius: 3rem;
+
+    &__group {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    &__textarea {
+      resize: none;
+    }
+
+    &__input {
+      font-size: 1.5rem;
+      font-weight: 500;
+      font-family: inherit;
+      color: inherit;
+      padding: 1.5rem 2rem;
+      border-radius: 0.5rem;
+      background-color: rgba($color-tertiary, 0.3);
+      border: none;
+      border-bottom: 3px solid transparent;
+      width: 100%;
+      display: block;
+      transition: all 0.3s;
+
+      &:focus {
+        outline: none;
+        box-shadow: 0 1rem 2rem rgba($color-white, 0.01);
+        border-bottom: 3px solid $color-primary;
+      }
+
+      &:focus:invalid {
+        border-bottom: 3px solid $color-secondary;
+      }
+
+      &::-webkit-input-placeholder {
+        color: $color-white;
+      }
+    }
+
+    &__label {
+      color: $color-white;
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-left: 2.5rem;
+      margin-bottom: 0.7rem;
+      display: block;
+      transition: all 0.3s;
+    }
+
+    &__input:placeholder-shown + &__label {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(3rem);
+    }
+  }
+}

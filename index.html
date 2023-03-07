@@ -41,46 +41,424 @@
       href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,800"
     />
 
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="/img/favicon.png" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
 
     <script type="module" src="src/js/controller.js"></script>
   </head>
   <body class="container">
-    <nav class="nav mb-lg">
-      <svg class="nav__logo">
-        <use xlink:href="src/img/SVG/highdata_logo.svg#highdata-logo"></use>
-      </svg>
-      <ul class="nav__menu">
-        <li class="nav__menu__item">
-          <a class="nav__menu__link">Sobre Nosotros</a>
-        </li>
-        <li class="nav__menu__item">
-          <a class="nav__menu__link">Equipos DIY</a>
-        </li>
-        <li class="nav__menu__item">
-          <a class="nav__menu__link">Servicios</a>
-        </li>
-        <li class="nav__menu__item"><a class="nav__menu__link">Contacto</a></li>
-      </ul>
-    </nav>
-    <header class="section-header">
-      <div class="section-header__card">
-        <div class="section-header__card__text"><h1 class="heading-primary heading-primary--main">
-          Tu casa <span class="heading-primary--color-secondary">inteligente</span><br><span class="heading-primary--color-secondary">totalmente</span> automatizada
-        </h1>
-        <h2 class="heading-primary heading-primary--sub mb-lg">
-          El control está en <span class="heading-primary--color-secondary">tus manos</span> 
-        </h2 class="heading-primary--sub heading-primary mb-lg">
-        <a class="btn">Tómalo ahora</a></div>
-        
-        <div class="section-header__card__image"></div>
-      </div>
-      <div>
-
+    <header class="header header__background">
+      <nav class="nav">
+        <img
+          src="/src/img/highdatalogo.png"
+          alt="logo highdata"
+          class="nav__logo"
+        />
+        <!-- <svg class="nav__logo">
+          <use xlink:href="src/img/SVG/highdata_logo.svg#highdata-logo"></use>
+        </svg> -->
+        <ul class="nav__menu">
+          <li class="nav__menu__item">
+            <a class="nav__menu__link" href="#sobre-nosotros">Sobre Nosotros</a>
+          </li>
+          <li class="nav__menu__item">
+            <a class="nav__menu__link" href="#servicios">Servicios</a>
+          </li>
+          <li class="nav__menu__item">
+            <a class="nav__menu__link" href="#contacto">contacto</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__card">
+        <div class="header__card__text">
+          <h1 class="heading-primary heading-primary--main mb-md">
+            Crea tu
+            <span class="heading-primary--color-primary">
+              casa inteligente
+            </span>
+            <br />
+            <span class="heading-primary--color-primary">totalmente</span>
+            automatizada
+          </h1>
+          <h2 class="heading-primary heading-primary--sub mb-lg">
+            Nosotros te enseñamos
+            <!-- El control está en tus manos <span class="heading-primary--color-secondary">en tus manos</span>  -->
+          </h2>
+          <a class="btn">¡Aprende cómo!</a>
+        </div>
       </div>
     </header>
-    <main></main>
-    <footer></footer>
+    <main class="subgrid">
+      <div class="sobre-nosotros" id="sobre-nosotros">
+        <h2
+          class="sobre-nosotros__heading heading-primary heading-primary--main heading-primary--color-secondary center-block"
+        >
+          ¿Quiénes somos?
+        </h2>
+        <div class="sobre-nosotros__card">
+          <div class="gradient-box">
+            <div class="sobre-nosotros__card--tecnologia padding-md">
+              <svg class="icon icon-rocket">
+                <use xlink:href="src/img/SVG/sprite.svg#rocket"></use>
+              </svg>
+              <h3 class="heading-secondary mb-sm ta-c">
+                Somos amantes de la tecnología
+              </h3>
+              <p class="card-text ta-c">
+                Nos apasiona implementar tecnología de última generación en
+                viviendas inteligentes para que estés siempre a la vanguardia de
+                la innovación y vivas un futuro lleno de posibilidades.
+              </p>
+            </div>
+          </div>
+          <div class="gradient-box">
+            <div class="sobre-nosotros__card--experiencia padding-md">
+              <svg class="icon icon-experience">
+                <use xlink:href="src/img/SVG/sprite.svg#briefcase"></use>
+              </svg>
+              <h3 class="heading-secondary mb-sm ta-c">
+                Más de 10 años de experiencia
+              </h3>
+              <p class="card-text ta-c">
+                Contamos con amplia experiencia en la instalación de sistemas de
+                domótica y siempre te recomendamos los productos más adecuados
+                para adaptarse a tu estilo de vida.
+              </p>
+            </div>
+          </div>
+          <div class="gradient-box">
+            <div class="sobre-nosotros__card--compartir padding-md">
+              <svg class="icon icon-cap">
+                <use xlink:href="src/img/SVG/sprite.svg#cap"></use>
+              </svg>
+              <h3 class="heading-secondary mb-sm ta-c">
+                Queremos compartirte lo que sabemos
+              </h3>
+              <p class="card-text ta-c">
+                Nos mueve compartir nuestro conocimiento porque queremos que más
+                personas experimenten del verdadero lujo y comfort que solo una
+                casa totalmente automatizada puede ofrecer.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="sobre-nosotros__cta">
+          <a href="#popup" class="btn center-block">¡Conoce más!</a>
+        </div>
+      </div>
+      <div class="servicios" id="servicios">
+        <div class="servicios__color-bar"></div>
+        <h2
+          class="servicios__heading heading-primary heading-primary--main heading-primary--color-secondary center-block mb-hg"
+        >
+          Nuestros Servicios
+        </h2>
+        <div class="servicios__servicio servicios__servicio--1">
+          <div class="servicios__servicio__img">
+            <img
+              src="src/img/camera.png"
+              alt=""
+              class="servicios__servicio__img--1"
+            />
+          </div>
+          <div
+            class="servicios__servicio__textbox servicios__servicio__textbox--1"
+          >
+            <h3 class="heading-secondary mb-sm">Seguridad y Videovigilancia</h3>
+            <p class="servicios__servicio__textbox__text card-text">
+              Nuestros equipos de seguridad y videovigilancia son la solución
+              perfecta para proteger su hogar o negocio. Contamos con una amplia
+              variedad de sistemas de seguridad que incluyen cámaras de
+              vigilancia, sensores de movimiento, alarmas y sistemas de control
+              de acceso. Con nuestras cámaras de vigilancia, puede monitorear su
+              propiedad en tiempo real desde cualquier lugar del mundo. Además,
+              nuestros expertos en instalación pueden personalizar un sistema
+              que se adapte a sus necesidades específicas, garantizando que su
+              hogar o negocio esté siempre seguro y protegido.
+            </p>
+            <a href="" class="cta-contacto">¡Quiero más información!</a>
+          </div>
+        </div>
+        <div class="servicios__servicio servicios__servicio--2">
+          <div
+            class="servicios__servicio__textbox servicios__servicio__textbox--2"
+          >
+            <h3 class="heading-secondary mb-sm">Iluminación inteligente</h3>
+            <p class="servicios__servicio__textbox__text card-text">
+              Si buscas una experiencia única en iluminación inteligente,
+              nuestros equipos son la mejor solución para transformar tu hogar o
+              negocio en un espacio moderno y funcional. Así podrás controlar y
+              personalizar la iluminación de tu espacio desde cualquier lugar
+              del mundo con solo un toque. Puedes ajustar la intensidad de la
+              luz, cambiar los colores y crear escenarios personalizados para
+              sacar el máximo de cada momento. Noches de películas, cenas
+              románticas, fiestas inolvidables, ¡Todo esto y más al alcance de
+              tu mano!
+            </p>
+            <a href="" class="cta-contacto">¡Quiero más información!</a>
+          </div>
+          <div class="servicios__servicio__img">
+            <img
+              src="src/img/camera.png"
+              alt=""
+              class="servicios__servicio__img--2"
+            />
+          </div>
+        </div>
+        <div class="servicios__servicio servicios__servicio--3">
+          <div class="servicios__servicio__img">
+            <img
+              src="src/img/camera.png"
+              alt=""
+              class="servicios__servicio__img--3"
+            />
+          </div>
+          <div
+            class="servicios__servicio__textbox servicios__servicio__textbox--3"
+          >
+            <h3 class="heading-secondary mb-sm">
+              Sistemas de audio de alta definición
+            </h3>
+            <p class="servicios__servicio__textbox__text card-text">
+              Nuestros sistemas de audio de alta definición ofrecen una
+              experiencia de sonido envolvente y de alta calidad que le
+              permitirá disfrutar de su música, películas y programas favoritos
+              como nunca antes. Elija en qué habitación quiere que se reproduzca
+              su música y controle el volumen y la ecualización desde la palma
+              de su mano. Contamos con una amplia gama de sistemas de audio,
+              desde altavoces inalámbricos y equipos de audio envolvente para
+              teatro en casa hasta bocinas para exteriores y amplificadores de
+              alta fidelidad.
+            </p>
+            <a href="" class="cta-contacto">¡Quiero más información!</a>
+          </div>
+        </div>
+        <div class="servicios__servicio servicios__servicio--4">
+          <div
+            class="servicios__servicio__textbox servicios__servicio__textbox--4"
+          >
+            <h3 class="heading-secondary mb-sm">Páneles Fotovoltáicos</h3>
+            <p class="servicios__servicio__textbox__text card-text">
+              Ofrecemos servicios de venta e instalación de páneles solares para
+              su hogares y negocios. Los páneles fotovoltáicos son una excelente
+              opción que le permitirá reducir su huella de carbono y ahorrar
+              dinero en el recibo de luz, ¡llegándose a pagar solos con el
+              tiempo!, además, manejamos los equipos de mejor calidad del
+              mercado y con la tecnología más avanzada. Nuestros expertos en
+              instalación le ayudarán a diseñar el sistema personalizado que se
+              adapte a sus necesidades. ¿Qué esperas?
+            </p>
+            <a href="#contacto" class="cta-contacto"
+              >¡Quiero más información!</a
+            >
+          </div>
+          <div class="servicios__servicio__img">
+            <img
+              src="src/img/camera.png"
+              alt=""
+              class="servicios__servicio__img--4"
+            />
+          </div>
+        </div>
+        <!-- <div
+          class="servicios__servicio servicios__servicio--5"
+        >
+          <h3 class="heading-secondary mb-sm">Control de clima Avanzado</h3>
+          <p class="servicios__servicio__text card-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+            nesciunt ad vero, voluptatibus amet quia beatae omnis explicabo
+            molestias fuga. Aperiam corporis accusamus possimus ducimus quo
+            dignissimos nemo repellendus minus!
+          </p>
+          <img
+            src=""
+            alt=""
+            class="servicios__servicio__img servicios__servicio__img--5"
+          />
+        </div> -->
+      </div>
+      <div class="contacto" id="contacto">
+        <h2
+          class="heading-primary heading-primary--main heading-primary--color-secondary center-block mb-md"
+        >
+          Escríbenos para más información
+        </h2>
+        <p class="contacto__heading--sub contacto__text">
+          Nos comunicaremos para asesorarte en tu proyecto
+        </p>
+        <form action="submit.php" method="post" class="contacto__form">
+          <div class="contacto__form__group">
+            <input
+              type="text"
+              class="contacto__form__input"
+              placeholder="Nombre Completo"
+              id="nombre"
+              required
+            />
+            <label for="name" class="contacto__form__label">Nombre</label>
+          </div>
+
+          <div class="contacto__form__group">
+            <input
+              type="email"
+              class="contacto__form__input"
+              placeholder="Correo electrónico"
+              id="email"
+              required
+            />
+            <label for="email" class="contacto__form__label">Correo</label>
+          </div>
+
+          <div class="contacto__form__group">
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              class="contacto__form__input"
+              placeholder="Número telefónico"
+              required
+            />
+            <label for="phone" class="contacto__form__label">Teléfono</label>
+          </div>
+
+          <div class="contacto__form__group">
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              cols="50"
+              class="contacto__form__input contacto__form__textarea"
+              placeholder="Escribe tu mensaje"
+              required
+            ></textarea>
+            <label class="contacto__form__label" for="message">Mensaje</label>
+          </div>
+          <div class="form__group">
+            <button class="btn btn--form">¡Vive el futuro! &rarr;</button>
+          </div>
+        </form>
+      </div>
+      <div class="popup nosotros" id="popup">
+        <div class="popup__content">
+          <div class="popup__left">
+            <img src="src/img/house.jpg" alt="foto1" class="popup__img" />
+            <img src="src/img/house2.jpg" alt="foto2" class="popup__img" />
+          </div>
+          <div class="popup__right">
+            <a href="#sobre-nosotros" class="popup__close">&times;</a>
+            <h2
+              class="heading-primary heading-primary--main heading-primary--color-dark center-block mb-md"
+            >
+              ¿Quiénes somos?
+            </h2>
+            <p class="popup__text">
+              ¡Bienvenidos a Highdata!, somos una empresa fundada por los
+              hermanos, César y Arturo Alanís Núñez con el objetivo de compartir
+              nuestros conocimientos en tecnología y automatización con todos
+              los fanáticos del <em>Do it Yourself</em> para que puedan
+              disfrutar de la comodidad de tener una casa inteligente totalmente
+              automatizada sin necesidad de gastar más en los costos de
+              instalación. <br /><br />
+
+              Desde siempre hemos sido apasionados por la tecnología, y hemos
+              dedicado gran parte de nuestras vidas a aprender todo lo posible
+              sobre ella. Arturo es un ingeniero aeronáutico, maestro en diseño
+              e innovación y actualmente cursa el doctorado en Ciencia y
+              Tecnología, lo que le ha permitido explorar el mundo de la
+              tecnología desde diferentes ángulos y aplicar su creatividad en la
+              búsqueda de soluciones novedosas a problemas complejos. Por otra
+              parte, César es ingeniero mecatrónico y cuenta con una amplia
+              experiencia en la integración de sistemas, la instalación de
+              equipos y la automatización de procesos.<br /><br />
+
+              Para nosotros, la tecnología es una herramienta poderosa que puede
+              hacer nuestra vida mucho más fácil, eficiente, segura y divertida.
+              Por eso, estamos convencidos de que el hacer tu hogar inteligente
+              es una manera excelente de llevar tu calidad de vida al siguiente
+              nivel. Además, nos encanta compartir nuestros conocimientos y
+              enseñar a nuestros clientes sobre cómo pueden aprovechar al máximo
+              estas herramientas.<br /><br />
+
+              En Highdata, nos apasiona probar y seleccionar los mejores
+              productos para nuestros clientes, ofreciéndoles siempre aquellos
+              que cumplen con nuestros requerimientos de calidad, precio y
+              facilidad de instalación. De esta manera nuestros clientes podrán
+              disfrutar la experiencia de vivir en una casa inteligente sin
+              ninguna complicación adicional y sin necesidad de contar con
+              conocimientos altamente especializados.<br /><br />
+
+              Así que si estás buscando hacer tu casa inteligente, ¡estás en el
+              lugar adecuado! En Highdata, no solo encontrarás los mejores
+              productos, sino también un equipo de expertos apasionados por la
+              tecnología y comprometidos con brindarte toda la información que
+              necesites para unirte al mundo de la automatización de manera
+              sencilla y divertida.<br /><br />
+
+              Y si no quieres lidiar con la instalación, contamos con un equipo
+              técnico que está disponible para hacerlo por ti, siguiendo las
+              mejores prácticas de la industria.<br /><br />
+
+              ¿Qué estas esperando?
+              <a href="#contacto">!Contáctanos ahora!</a> y disfruta de tener
+              una casa inteligente totalmente automatizada!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="masservicios hidden"></div>
+    </main>
+    <footer class="footer">
+      <div class="footer__card">
+        <div class="footer__card__logo">
+          <img
+            src="/src/img/highdatalogo.png"
+            alt="logo highdata"
+            class="footer__card__logo__img"
+          />
+        </div>
+
+        <p class="footer__card__text footer-text">
+          ¿Qué estas esperando? ¡Automatiza tu casa y disfruta vivir el futuro,
+          nosotros te ayudamos!
+        </p>
+      </div>
+      <nav class="footer__nav">
+        <ul class="footer__nav__menu">
+          <li>
+            <a href="#sobre-nosotros" class="footer__nav__menu__link"
+              >Sobre nosotros</a
+            >
+          </li>
+          <li>
+            <a href="#servicios" class="footer__nav__menu__link">Servicios</a>
+          </li>
+          <li>
+            <a href="#contacto" class="footer__nav__menu__link">Contacto</a>
+          </li>
+          <li>
+            <a href="#terminos-y-condiciones" class="footer__nav__menu__link"
+              >Términos y condiciones</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="footer__redes">
+        <p class="footer__redes__text footer-text">
+          ¡Síguenos en nuestras redes sociales y pregúntanos cualquier duda en
+          nuestro WhatsApp!
+        </p>
+        <div class="footer__redes__icons">
+          <svg class="icon icon-facebook">
+            <use xlink:href="src/img/SVG/sprite.svg#facebook"></use>
+          </svg>
+          <svg class="icon icon-instagram">
+            <use xlink:href="src/img/SVG/sprite.svg#instagram"></use>
+          </svg>
+          <svg class="icon icon-whatsapp">
+            <use xlink:href="src/img/SVG/sprite.svg#whatsapp"></use>
+          </svg>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

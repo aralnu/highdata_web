@@ -1,0 +1,38 @@
+.icon {
+  width: 6rem;
+  height: 6rem;
+  display: block;
+  margin: auto;
+  $color-redes: $color-secondary;
+  $size-redes: 6rem;
+
+  &-experience {
+    margin-bottom: 2rem;
+  }
+
+  &-rocket {
+    margin-bottom: 2rem;
+  }
+
+  &-cap {
+    margin-bottom: 2rem;
+  }
+
+  &-facebook {
+    width: $size-redes;
+    height: $size-redes;
+    color: $color-redes;
+  }
+
+  &-instagram {
+    width: $size-redes;
+    height: $size-redes;
+    color: $color-redes;
+  }
+
+  &-whatsapp {
+    width: $size-redes;
+    height: $size-redes;
+    color: $color-redes;
+  }
+}
