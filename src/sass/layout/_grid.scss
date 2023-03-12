@@ -4,18 +4,12 @@
     rgba($color-primary, 1),
     rgba($color-tertiary, 1)
   );
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: repeat(
-    12,
-    [col-start] minmax(min-content, 1fr) [col-end]
-  );
   padding: 4rem;
 }
 
 .subgrid {
-  display: grid;
-  grid-column: 1 / -1;
-  grid-template-rows: minmax(min-content, 1fr);
-  grid-template-columns: repeat(12, minmax(min-content, 1fr));
+  // display: grid;
+  // grid-column: 1 / -1;
+  // grid-template-rows: minmax(min-content, 1fr);
+  // grid-template-columns: repeat(12, minmax(min-content, 1fr));
 }

@@ -1,12 +1,9 @@
 .nav {
   // background-color: linear-gradient(to top, #fff000 0%, $color-background 100%);
-  grid-column: 1 / -1;
-  grid-row: 1;
-
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  align-items: center;
-  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  gap: auto;
+  justify-content: space-between;
 
   // margin-left: 5rem;
   // margin-top: 2rem;
@@ -16,10 +13,10 @@
   z-index: 10;
   &__menu {
     display: flex;
-    grid-column: 8 / -2;
-    grid-row: 1 / 2;
+    gap: 4rem;
+    // grid-column: 8 / -2;
+    // grid-row: 1 / 2;
     list-style: none;
-    justify-content: space-evenly;
     // &__item {
     //   display: flex;
     //   align-self: start;
@@ -27,6 +24,7 @@
 
     &__link:link,
     &__link:visited {
+      flex: 1;
       color: $color-white;
       text-decoration: none;
       /*text-transform: uppercase;*/
@@ -42,10 +40,8 @@
   }
 
   &__logo {
-    grid-column: 2;
-    transform: translateY(50%);
+    width: 200px;
     // margin-top: 2rem;
     // margin-left: 8rem;
-    width: 140%;
   }
 }

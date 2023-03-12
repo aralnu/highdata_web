@@ -6,44 +6,41 @@
 }
 .header {
   // background-color: $color-background-light;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: minmax(min-content, max-content);
-  grid-column: 1 / -1;
-  grid-row: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  // display: grid;
+  // grid-template-columns: repeat(12, 1fr);
+  // grid-template-rows: minmax(min-content, max-content);
+  // grid-column: 1 / -1;
+  // grid-row: 1 / -1;
   // margin-left: 4rem;
   font-family: $font-header;
+  background-image: linear-gradient(
+      to bottom right,
+      rgba($color-background, 0.8),
+      rgba($color-tertiary, 0.1)
+    ),
+    url("../src/img/house2.jpg");
+
+  height: 100vh;
+  padding: 6rem 6rem 0 6rem;
+  // width: 100%;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
 
   // -webkit-clip-path: polygon(0 0, 100% 0%, 100% 92.5%, 0% 100%);
   // clip-path: polygon(0 0, 100% 0%, 100% 92.5vh, 0% 97.5vh);
   // clip-path: polygon(0 0, 100% 0%, 100% 92.5vh, 0% 95vh);
   &__background {
-    background-image: linear-gradient(
-        to bottom right,
-        rgba($color-background, 0.8),
-        rgba($color-tertiary, 0.1)
-      ),
-      url("../src/img/house2.jpg");
-
-    height: 100vh;
-    // width: 100%;
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
   }
-  &__card {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-column: 1 / -1;
-    grid-row: 2;
-    // background-color: $color-background-dark;
 
-    &__text {
-      grid-column: 2 / -1;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: center;
-    }
+  &__card {
+    // grid-column: 2 / -1;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
   }
 }

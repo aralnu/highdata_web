@@ -44,7 +44,7 @@
     <link rel="shortcut icon" type="image/png" href="/img/favicon.png" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
 
-    <script type="module" src="src/js/controller.js"></script>
+    <script defer src="src/js/script.js"></script>
   </head>
   <body class="container">
     <header class="header header__background">
@@ -57,35 +57,34 @@
         <!-- <svg class="nav__logo">
           <use xlink:href="src/img/SVG/highdata_logo.svg#highdata-logo"></use>
         </svg> -->
-        <ul class="nav__menu">
-          <li class="nav__menu__item">
-            <a class="nav__menu__link" href="#sobre-nosotros">Sobre Nosotros</a>
+        <ul class="nav__menu nav__links">
+          <li class="nav__menu__item nav__item">
+            <a class="nav__menu__link nav__link" href="#sobre-nosotros"
+              >Sobre Nosotros</a
+            >
           </li>
-          <li class="nav__menu__item">
-            <a class="nav__menu__link" href="#servicios">Servicios</a>
+          <li class="nav__menu__item nav__item">
+            <a class="nav__menu__link nav__link" href="#servicios">Servicios</a>
           </li>
-          <li class="nav__menu__item">
-            <a class="nav__menu__link" href="#contacto">contacto</a>
+          <li class="nav__menu__item nav__item">
+            <a class="nav__menu__link nav__link" href="#contacto">Contacto</a>
           </li>
         </ul>
       </nav>
+
       <div class="header__card">
-        <div class="header__card__text">
-          <h1 class="heading-primary heading-primary--main mb-md">
-            Crea tu
-            <span class="heading-primary--color-primary">
-              casa inteligente
-            </span>
-            <br />
-            <span class="heading-primary--color-primary">totalmente</span>
-            automatizada
-          </h1>
-          <h2 class="heading-primary heading-primary--sub mb-lg">
-            Nosotros te enseñamos
-            <!-- El control está en tus manos <span class="heading-primary--color-secondary">en tus manos</span>  -->
-          </h2>
-          <a class="btn">¡Aprende cómo!</a>
-        </div>
+        <h1 class="heading-primary heading-primary--main mb-md">
+          Crea tu
+          <span class="heading-primary--color-primary"> casa inteligente </span>
+          <br />
+          <span class="heading-primary--color-primary">totalmente</span>
+          automatizada
+        </h1>
+        <h2 class="heading-primary heading-primary--sub mb-lg">
+          Nosotros te enseñamos
+          <!-- El control está en tus manos <span class="heading-primary--color-secondary">en tus manos</span>  -->
+        </h2>
+        <a class="btn btn--scroll-to" href="#sobre-nosotros">¡Aprende cómo!</a>
       </div>
     </header>
     <main class="subgrid">
@@ -143,13 +142,13 @@
           </div>
         </div>
         <div class="sobre-nosotros__cta">
-          <a href="#popup" class="btn center-block">¡Conoce más!</a>
+          <a href="#quienes_somos" class="btn center-block">¡Conoce más!</a>
         </div>
       </div>
       <div class="servicios" id="servicios">
         <div class="servicios__color-bar"></div>
         <h2
-          class="servicios__heading heading-primary heading-primary--main heading-primary--color-secondary center-block mb-hg"
+          class="servicios__heading heading-primary heading-primary--main heading-primary--color-secondary center-block mb-md"
         >
           Nuestros Servicios
         </h2>
@@ -279,7 +278,7 @@
       </div>
       <div class="contacto" id="contacto">
         <h2
-          class="heading-primary heading-primary--main heading-primary--color-secondary center-block mb-md"
+          class="heading-primary heading-primary--main heading-primary--color-secondary center-block"
         >
           Escríbenos para más información
         </h2>
@@ -338,7 +337,7 @@
           </div>
         </form>
       </div>
-      <div class="popup nosotros" id="popup">
+      <div class="popup nosotros" id="quienes_somos">
         <div class="popup__content">
           <div class="popup__left">
             <img src="src/img/house.jpg" alt="foto1" class="popup__img" />
@@ -399,8 +398,1031 @@
               mejores prácticas de la industria.<br /><br />
 
               ¿Qué estas esperando?
-              <a href="#contacto">!Contáctanos ahora!</a> y disfruta de tener
+              <a href="#contacto">¡Contáctanos ahora!</a> ¡y disfruta de tener
               una casa inteligente totalmente automatizada!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="popup terminos" id="terminos-y-condiciones">
+        <div class="popup__content terminos__content">
+          <a href="#" class="popup__close">&times;</a>
+          <div class="popup__right terminos__content__text">
+            <h2
+              class="heading-primary heading-primary--main heading-primary--color-dark center-block mb-md"
+            >
+              Términos y Condiciones Comerciales
+            </h2>
+            <h3>Definiciones</h3>
+
+            <p>
+              <strong>&ldquo;Usuario&rdquo;</strong>,
+              <strong>&ldquo;Cliente&rdquo;</strong> y
+              <strong>&ldquo;usted&rdquo;</strong> o
+              <strong>&ldquo;Ud.&rdquo;</strong> se refiere a la persona física
+              o jurídica que visita este sitio web, hace uso de las herramientas
+              y/o compra los productos y/o servicios ofrecidos por este medio.
+              <br /><br />
+              <strong>&ldquo;Highdata&rdquo;</strong> o
+              <strong>&ldquo;nosotros&rdquo;</strong> se refiere a Highdata.
+              <strong>&ldquo;términos y condiciones&rdquo;</strong> se refiere a
+              todos los términos presentes en este documento, incluyendo todos
+              aquellos términos y/ o políticas adicionales mencionados, y/o
+              aquellos referidos por hipervínculo. <br /><br />
+              <strong>&ldquo;Confirmación de pedido&rdquo;</strong>
+              documento por el cual Highdata acepta un pedido de productos y/o
+              servicios.
+              <br /><br />
+              <strong>&ldquo;Precio&rdquo;</strong> es el precio indicado en la
+              confirmación de pedido.
+              <strong>&ldquo;Producto&rdquo;</strong> bien u oferta de servicio
+              descrito en la confirmación de pedido. <br /><br />
+              <strong>&ldquo;Oferta de servicio&rdquo;</strong>
+              descripción del servicio detallada en la confirmación de pedido.
+              <br /><br />
+              <strong>&ldquo;Servicio&rdquo;</strong> servicio de tienda en
+              línea de Highdata.<br /><br />
+              <strong>&ldquo;Software&rdquo;</strong> se refiere a los programas
+              de computadora, incluyendo sistemas operativos y/o aplicaciones
+              informáticas o móviles.
+            </p>
+
+            <h3>General</h3>
+
+            <p>
+              Este sitio web es operado por <strong>Highdata</strong>. Highdata
+              presenta esta página web, incluyendo la información, herramientas,
+              productos y servicios disponibles en este sitio a usted, el
+              usuario o cliente, cuyo uso de la plataforma e información está
+              condicionado a la aceptación de todos los términos, condiciones y
+              políticas mencionados en este documento. Estos
+              <strong>&ldquo;términos y condiciones&rdquo;</strong> son
+              aplicables a todas las ventas de
+              <strong>&ldquo;productos&rdquo;</strong> realizadas por
+              <strong>&ldquo;Highdata&rdquo;</strong> dentro de la República
+              Mexicana, ya sean productos promocionados o incluidos en
+              cualquiera de sus formas, en nuestros, folletos, promociones,
+              lista de precios, anuncios, presupuestos, campañas de marketing
+              digital, otras publicaciones en Internet y/o verbalmente. Al
+              visitar nuestro sitio y/o comprar algún bien o servicio,
+              <strong>&ldquo;el usuario&rdquo;</strong> se compromete con
+              nuestro <strong>&ldquo;servicio&rdquo;</strong> y acepta nuestros
+              <strong>&ldquo;términos y condiciones&rdquo;</strong>. Estos
+              términos aplican a todos los usuarios del sitio, incluyendo pero
+              sin limitarse a, a personas que navegan por el sitio, vendedores,
+              clientes, comerciantes y / o contribuyentes de contenido. Por
+              favor lea estos
+              <strong>&ldquo;términos y condiciones&rdquo;</strong>
+              cuidadosamente antes de acceder a nuestro sitio web. Al acceder o
+              utilizar cualquier parte del sitio, usted acepta estar sujeto a
+              estos términos de servicio. Si usted no acepta todos los
+              <strong>&ldquo;términos y condiciones&rdquo;</strong> de este
+              contrato, usted no está autorizado a ingresar al sitio y a
+              utilizar los servicios proporcionados en él. Cualquier
+              característica, herramienta o producto que sea añadido a este
+              sitio web será sujeto a estos
+              <strong>&ldquo;términos y condiciones&rdquo;</strong>. El usuario
+              podrá consultar la versión actual de los
+              <strong>&ldquo;términos y condiciones&rdquo;</strong> en cualquier
+              momento en esta página.
+              <strong>&ldquo;La empresa&rdquo;</strong> se reserva el derecho de
+              actualizar, cambiar o reemplazar cualquier parte de estos
+              <strong>&ldquo;términos y condiciones&rdquo;</strong> al publicar
+              las actualizaciones y/o cambios a nuestro sitio web. Es
+              responsabilidad del <strong>&ldquo;usuario&rdquo;</strong> revisar
+              periódicamente esta página para conocer los cambios en los
+              <strong>&ldquo;términos y condiciones&rdquo;</strong>. El uso
+              continuo o el acceso al sitio posterior a la publicación de
+              cualquier cambio en los
+              <strong>&ldquo;términos y condiciones&rdquo;</strong> será
+              considerado como la aceptación de esos cambios.
+            </p>
+
+            <h3>1 &ndash; Términos de la tienda en línea</h3>
+
+            <p>
+              Al aceptar estos
+              <strong>&ldquo;términos y condiciones&rdquo;</strong>,
+              <strong>&ldquo;el usuario&rdquo;</strong> declara que usted cuenta
+              con la edad de mayoría legal en su estado o lugar de residencia o
+              bien, que tiene la mayoría de edad legal en su estado o lugar de
+              residencia y que nos ha dado el consentimiento para permitir a sus
+              menores a utilizar este sitio. Usted no puede utilizar nuestros
+              productos para cualquier propósito ilegal o no autorizado ni
+              puede, dentro del uso del
+              <strong>&ldquo;servicio&rdquo;</strong> o
+              <strong>&ldquo;producto&rdquo;</strong> violar cualquier ley de su
+              jurisdicción (incluyendo pero no limitándose a las leyes de
+              derecho de autor o propiedad industrial). Cualquier violación de
+              los
+              <strong>&ldquo;términos y condiciones&rdquo;</strong>
+              resultará en una terminación inmediata de
+              <strong>&ldquo;el servicio&rdquo;</strong>. Nuestro servicio de
+              cobro es manejado por la plataforma Stripe, quienes se encargarán
+              de manejar su información de pago la cual, dependiendo del método
+              de pago utilizado puede incluir sus datos de tarjeta de crédito o
+              débito. En ningún momento Highdata o sus empleados recibirán
+              información concerniente a sus datos bancarios o de tarjetas de
+              crédito o débito.
+            </p>
+
+            <h3>2. &ndash; Condiciones generales</h3>
+
+            <p>
+              Nos reservamos el derecho de rechazar
+              <strong>&ldquo;el servicio&rdquo;</strong> a cualquier persona, en
+              cualquier momento, por cualquier razón. El
+              <strong>&ldquo;usuario&rdquo;</strong> entiende que su información
+              (no incluyendo información bancaria o de tarjetas de crédito)
+              puede ser transferida, encriptada o desencriptada y ser sometida
+              a: a) transmisiones a varias redes, y b) cambios para dar
+              conformidad y adaptarse a los requerimientos técnicos de las redes
+              o dispositivos a los cuales se conecte. La información asociada a
+              tarjetas de crédito siempre estará encriptada durante la
+              transferencia a través de las redes y será procesada por la
+              plataforma Stripe. El
+              <strong>&ldquo;usuario&rdquo;</strong> acepta no reproducir,
+              duplicar, copiar, vender, revender o explotar cualquier porción
+              del <strong>&ldquo;servicio&rdquo;</strong>, uso del servicio o
+              acceso al servicio o cualquier contacto con el sitio web a través
+              del cual <strong>&ldquo;el servicio&rdquo;</strong> es provisto,
+              sin el consentimiento expreso escrito por
+              <strong>&ldquo;nosotros&rdquo;</strong>. Los encabezados
+              utilizados en este contrato están nombrados únicamente por
+              conveniencia y no limitarán o afectarán la aplicación de estos
+              términos.
+            </p>
+            <h3>3 &ndash; Sobre la información presentada en el sitio</h3>
+            <p>
+              No nos hacemos responsables si la información que se presenta en
+              este sitio no es precisa, está incompleta o no es actual. El
+              material en este sitio es provisto como información general
+              únicamente y no deberá ser utilizado como la única fuente para la
+              toma de decisiones sin consultar fuentes de información primaria
+              más confiables, más completas o más actuales. Cualquier uso del
+              material presentado en este sitio web queda bajo el propio riesgo
+              del <strong>&ldquo;usuario&rdquo;</strong>. Este sitio puede
+              contener cierta información histórica. La información histórica,
+              no necesariamente es correcta y está provista como referencia
+              únicamente. Nos reservamos el derecho de modificar los contenidos
+              de este sitio en cualquier momento, sin embargo no tenemos
+              obligación de actualizar la información en nuestro sitio.
+              <strong>&ldquo;** usuario&rdquo;</strong> acepta estar de acuerdo
+              que es su responsabilidad monitorear *** cambios a este sitio.
+            </p>
+
+            <h3>4 &ndash; Modificaciones en los servicios y los precios</h3>
+
+            <p>
+              Los precios de nuestros productos están sujetos a cambios sin
+              previo aviso. Nos reservamos el derecho de cambiar o descontinuar
+              el <strong>&ldquo;servicio&rdquo;</strong> (o cualquier parte o
+              contenido) en cualquier momento y sin previo aviso. <br /><br />
+              No responderemos ante el <strong>&ldquo;usuario&rdquo;</strong> o
+              ante cualquier tercero por cualquier modificación, cambio de
+              precio, suspensión o descontinuación del
+              <strong>&ldquo;servicio&rdquo;</strong>
+            </p>
+
+            <h3>5 &ndash; Productos y servicios</h3>
+
+            <p>
+              Algunos <strong>&ldquo;productos&rdquo;</strong> pueden estar
+              disponibles exclusivamente en línea a través de este sitio web.
+              Estos productos o servicios pueden tener cantidades limitadas y
+              están sujetos a devoluciones o cambios únicamente en acuerdo a
+              nuestra <strong>&ldquo;política de devolución&rdquo;</strong>.
+              <br /><br />
+              Hemos hecho todo el esfuerzo para mostrar las imágenes y los
+              colores de nuestros productos de la forma más precisa posible. No
+              obstante, nos es imposible garantizar que el dispositivo a través
+              del cual está accediendo al sitio web mostrará las imágenes y
+              colores con la suficiente precisión.
+              <br /><br />
+              Nos reservamos el derecho, pero no estamos obligados, a limitar
+              las ventas de nuestros productos o servicios a cualquier persona,
+              región geográfica o jurisdicción. Podemos ejercer este derecho en
+              función de cada caso. Nos reservamos el derecho de limitar las
+              cantidades de cualquier producto o servicio que ofrecemos. Todas
+              las descripciones de productos o los precios de los productos
+              están sujetos a cambios en cualquier momento, sin previo aviso,
+              bajo nuestro criterio. Nos reservamos el derecho de descontinuar
+              cualquier <strong>&ldquo;producto&rdquo;</strong> en cualquier
+              momento. Cualquier oferta por cualquier producto o servicio hecha
+              en este sitio no tiene validez donde esté prohibida. <br /><br />
+              No garantizamos que la calidad de los
+              <strong>&ldquo;productos&rdquo;</strong>, información o cualquier
+              otro material comprado o adquirido por usted cumplirá sus
+              expectativas, o que cualquier error en el
+              <strong>&ldquo;servicio&rdquo;</strong> será corregido.
+            </p>
+
+            <h3>
+              6 &ndash; Precisión de la información de envío y facturación
+            </h3>
+
+            <p>
+              Nos reservamos el derecho de rechazar cualquier orden que nos
+              solicite. Podemos, bajo nuestra propia discreción, limitar o
+              cancelar las cantidades compradas por persona, por casa o por
+              orden. Estas restricciones pueden incluir las órdenes levantadas
+              por la misma cuenta de usuario, la misma tarjeta de crédito o
+              débito y/u órdenes que compartan la misma dirección de entrega y/o
+              facturación. En el caso de que hagamos un cambio o cancelación de
+              una orden, intentaremos notificar al
+              <strong>&ldquo;cliente&rdquo;</strong> a través del correo
+              electrónico, teléfono o dirección de entrega y/o facturación
+              provisto(a) por <strong>&ldquo;el cliente&rdquo;</strong> al
+              momento de realizar la compra. Nos reservamos el derecho de
+              limitar o prohibir órdenes de compra que a nuestro juicio parezcan
+              estar hechas por vendedores, revendedores o distribuidores si de
+              acuerdo a nuestro criterio afectan o entorpecen la operación de
+              nuestro negocio. <br /><br />
+              El <strong>&ldquo;usuario&rdquo;</strong> acepta proveer su
+              información personal y de compra de forma precisa, completa y
+              actual para todas las compras que realice en nuestra tienda. Usted
+              acepta actualizar debidamente su información de cuenta, incluyendo
+              su dirección de correo electrónico, número de tarjeta de crédito y
+              fechas de expiración, de forma que podamos completar sus
+              transacciones y contactarlo como sea necesario. <br /><br />
+              Para mayor detalle, favor de revisar nuestra
+              <strong>&ldquo;política de devoluciones&rdquo;</strong>.
+            </p>
+            <h3>7&ndash; Pedido</h3>
+
+            <p>
+              Los pedidos se aceptarán por correo electrónico o teléfono y sólo
+              serán vinculantes una vez aceptados por
+              <strong>&ldquo;Highdata&rdquo;</strong> mediante la emisión de una
+              <strong>&ldquo;Confirmación de pedido&rdquo;</strong> por
+              cualquiera de los medios de comunicación antes descritos.
+              <strong>&ldquo;El cliente&rdquo;</strong> debe verificar la
+              <strong>&ldquo;confirmación de pedido&rdquo;</strong> y
+              notificarnos, inmediatamente, por correo electrónico, cualquier
+              error. En caso contrario, la descripción del
+              <strong>&ldquo;producto&rdquo;</strong> en la
+              <strong>&ldquo;confirmación de pedido&rdquo;</strong>
+              pasará a integrar este documento y será vinculante para las
+              partes.
+            </p>
+            <h3>8 &ndash; Precio y términos de pago</h3>
+
+            <p>
+              Los presupuestos y/ u ofertas serán válidos únicamente por escrito
+              y durante la vigencia que se indique. Si no se indica ninguna
+              vigencia, será de 7 días naturales. El precio del
+              <strong>&ldquo;producto&rdquo;</strong>, los términos, plazo y
+              condiciones de pago se establecerán en la
+              <strong>&ldquo;Confirmación de pedido&rdquo;</strong>. El precio
+              excluye impuestos, gastos de envío, seguro e instalación, salvo
+              que se señale explícitamente lo contrario. Salvo para el caso en
+              que se establezca lo contrario en la
+              <strong>&ldquo;Confirmación de pedido&rdquo;</strong>, el pago
+              deberá efectuarse al momento de realizar el pedido y deberá ser
+              recibido por <strong>&ldquo;Highdata&rdquo;</strong> previo a la
+              emisión de la Confirmación de Pedido. En caso de demora en el pago
+              (mora), se cobrarán los costos de recuperación, cobranza y
+              restitución de los Productos, y se aplicará un interés moratorio y
+              punitorio equivalente al 3% (tres por ciento) mensual, sobre la
+              cantidad adeudada por cada día que dicha cantidad permanezca
+              insoluta y hasta su total pago.
+              <strong>&ldquo;Highdata&rdquo;</strong> se reserva el derecho de
+              requerir aprobación previa a los débitos en tarjetas de crédito
+              y/o la certificación bancaria de cheques dados en pago antes de
+              iniciar el procedimiento de producción y entrega del
+              <strong>&ldquo;producto&rdquo;</strong>.
+            </p>
+            <h3>9 &ndash; Entrega / Riesgo</h3>
+
+            <p>
+              La entrega se realizará dentro del plazo establecido en la
+              <strong>&ldquo;confirmación de pedido&rdquo;</strong>. En el caso
+              de que se entreguen varios productos, las entregas podrán
+              efectuarse por partes. El lugar de entrega será aquel que se
+              indica en la
+              <strong>&ldquo;confirmación de pedido&rdquo;</strong>. Hasta el
+              total del pago del <strong>&ldquo;precio&rdquo;</strong>, usted no
+              podrá vender o gravar el <strong>&ldquo;producto&rdquo;</strong>.
+              El <strong>&ldquo;cliente&rdquo;</strong> será responsable por los
+              daños y perjuicios ocasionados por el rechazo injustificado de la
+              entrega, falta de pago total o parcial. Cualquier pérdida o daño
+              ocasionado durante el transporte del
+              <strong>&ldquo;producto&rdquo;</strong> será responsabilidad de
+              <strong>&ldquo;Highdata&rdquo;</strong> en caso de que este haya
+              escogido al transportista, de lo contrario será responsabilidad
+              del <strong>&ldquo;cliente&rdquo;</strong>.
+            </p>
+            <h3>10 &ndash; Aceptación y devolución</h3>
+
+            <p>
+              El <strong>&ldquo;cliente&rdquo;</strong> deberá examinar el
+              <strong>&ldquo;producto&rdquo;</strong> inmediatamente tras la
+              entrega o dentro del plazo acordado con
+              <strong>&ldquo;Highdata&rdquo;</strong>, de haberlo, para su
+              inspección o rechazo. Una vez transcurrido dicho plazo, se
+              considerará que <strong>&ldquo;el cliente&rdquo;</strong> ha
+              aceptado el <strong>&ldquo;producto&rdquo;</strong>. Para los
+              casos de <strong>&ldquo;producto&rdquo;</strong> dañado o
+              equivocado, <strong>&ldquo;el cliente&rdquo;</strong> tiene
+              derecho a devolver el <strong>&ldquo;producto&rdquo;</strong>,
+              para lo que deberá contactar previamente a
+              <strong>&ldquo;Highdata&rdquo;</strong> y obtener la aprobación
+              correspondiente mediante un número de autorización para la
+              devolución o reemplazo. Para que la devolución se haga efectiva,
+              el <strong>&ldquo;cliente&rdquo;</strong> deberá regresar el
+              <strong>&ldquo;producto&rdquo;</strong> en sus condiciones
+              originales, con su empaque original, nota de devolución y factura
+              de compra. Los costos de envío de devolución serán por la cuenta
+              de <strong>&ldquo;el cliente&rdquo;</strong>.
+            </p>
+            <h3>11 &ndash; Garantías</h3>
+            <p>
+              Las garantías se incluyen en la póliza de garantía que se entrega
+              junto con el (los)
+              <strong>&ldquo;producto(s)&rdquo;</strong> y se regirá por lo
+              establecido en ese documento, salvo por lo siguiente. Garantizamos
+              que el Producto está libre de defectos durante el plazo que se
+              indique en el documento de garantía. Para el caso de piezas o
+              partes de recambio el plazo de garantía será el establecido en la
+              póliza de garantía y no podrá exceder en ningún caso de 1 año
+              desde la fecha de compra. Si el Producto fuese defectuoso durante
+              este plazo, <strong>&ldquo;Highdata&rdquo;</strong> lo reparará o
+              sustituirá, en un plazo razonable. Con posterioridad al
+              vencimiento del plazo de garantía legal que prevé la ley Mexicana,
+              las reparaciones podrán realizarse utilizando partes o productos
+              nuevos, equivalentes a nuevos o reacondicionados que, aun cuando
+              no sean idénticos al Producto defectuoso, serán equivalentes a
+              nuevos en funcionalidad y aspecto. Ud. permitirá que
+              <strong>&ldquo;Highdata&rdquo;</strong> examine el Producto en **
+              ubicación. <strong>&ldquo;Highdata&rdquo;</strong> no garantiza ni
+              acepta responsabilidad por:<br /><br />
+              1. Daños originados por incorrecta instalación, uso, modificación
+              o reparación realizada por Ud. mismo o por tercero no debidamente
+              autorizado; <br />
+              2. Daños causados por cualquier persona u otra fuerza externa;<br />
+              3. Idoneidad del Producto para un fin, propósito o uso
+              determinado;<br />
+              4. Productos de Terceros y, Software especificado por Ud., cuya
+              garantía Ud. recibirá directamente de su fabricante o
+              licenciante;<br />
+              5. Cualquier instrucción dada por Ud. y realizada por
+              <strong>&ldquo;Highdata&rdquo;</strong> y;<br />
+              6. Que la operación sea ininterrumpida y sin errores. La
+              responsabilidad de
+              <strong>&ldquo;Highdata&rdquo;</strong> por cualquier violación a
+              esta garantía, a sus compromisos de servicios, o por cualquier
+              otro concepto, en ningún caso excederá el
+              <strong>&ldquo;Precio&rdquo;</strong> del
+              <strong>&ldquo;Producto&rdquo;</strong> establecido en la
+              <strong>&ldquo;confirmación de pedido&rdquo;</strong>. <br />Todos
+              los productos son proporcionados "Como son". La garantía de
+              <strong>&ldquo;Highdata&rdquo;</strong> se otorga en lugar de
+              todas las garantías implícitas y esas garantías implícitas están
+              excluidas hasta el límite legalmente permitido.
+            </p>
+            <h3>12 &ndash; Servicio técnico y Soporte.</h3>
+
+            <p>
+              Los servicios técnicos, cuando se acuerde la prestación de los
+              mismos con el
+              <strong>&ldquo;cliente&rdquo;</strong>, serán prestados por
+              <strong>&ldquo;Highdata&rdquo;</strong> o un
+              <strong>&ldquo;proveedor de servicios&rdquo;</strong> y podrán
+              variar dependiendo del <strong>&ldquo;producto&rdquo;</strong>.
+              Los tiempos de respuesta son estimados y pueden variar según el
+              emplazamiento/localización o accesibilidad al
+              <strong>&ldquo;producto&rdquo;</strong>. El servicio podrá
+              proporcionarse vía telefónica o Internet cuando sea apropiado. Si
+              está convenido y se indicó en la
+              <strong>&ldquo;confirmación de pedido&rdquo;</strong>, la
+              <strong>&ldquo;oferta de servicio&rdquo;</strong> puede incluir
+              asesoramiento, instalación, retiro y/o consulta. Salvo que
+              estuviera expresamente previsto en la
+              <strong>&ldquo;confirmación de pedido&rdquo;</strong> o que el
+              <strong>&ldquo;cliente&rdquo;</strong> adquiera servicios
+              adicionales a la garantía básica de 12 (doce) meses contenida en
+              el documento &ldquo;Garantía y Asistencia Técnica&rdquo;, que se
+              entrega junto con el <strong>&ldquo;producto&rdquo;</strong>. El
+              servicio de Garantía Básica no incluye: artículos excluidos de la
+              garantía, cambios en configuración, mantenimiento preventivo,
+              materiales consumibles, disquetes, CD's, trabajos que según el
+              criterio de <strong>&ldquo;Highdata&rdquo;</strong> no sea
+              necesario, entorno eléctrico, transferencia de datos o Software,
+              solución a problemas causados por virus, entre otros. Las
+              reparaciones de
+              <strong>&ldquo;Productos de terceros&rdquo;</strong> se efectuarán
+              según la garantía del fabricante o del licenciante. Es
+              responsabilidad del
+              <strong>&ldquo;cliente&rdquo;</strong> efectuar un respaldo de la
+              totalidad de la información, software y programas contenidos en el
+              <strong>&ldquo;producto&rdquo;</strong> previo a que
+              <strong>&ldquo;Highdata&rdquo;</strong> proceda con la prestación
+              de los servicios técnicos o soporte, incluyendo soporte vía
+              telefónica. Ni <strong>&ldquo;Highdata&rdquo;</strong> ni el
+              <strong>&ldquo;proveedor de servicios&rdquo;</strong>
+              podrán copiar u administrar materiales obtenidos en forma ilegal,
+              prohibidos por el ordenamiento legal vigente o respecto de los
+              cuales Ud. no cuente con la debida licencia de uso.
+            </p>
+            <h3>13 &ndash; Límite de Responsabilidad.</h3>
+
+            <p>
+              La responsabilidad de <strong>&ldquo;Highdata&rdquo;</strong> con
+              el <strong>&ldquo;cliente&rdquo;</strong> respecto de los daños
+              ocasionados o relacionados con estos
+              <strong>&ldquo;términos y condiciones&rdquo;</strong>, sin
+              perjuicio de la acción judicial o extrajudicial que determine
+              responsabilidad, ya sea contractual o extracontractual, no podrán
+              incluir, y nunca podrá <strong>&ldquo;Highdata&rdquo;</strong> ser
+              responsable por circunstancias excluidas de la garantía,
+              originadas por Fuerza Mayor o por pérdida de datos, software o
+              programas que pudiera haber sido evitable si el Cliente hubiere
+              dado cumplimiento a su obligación señalada en la cláusula XX;. La
+              responsabilidad de <strong>&ldquo;Highdata&rdquo;</strong> para
+              frente al Cliente respecto de los daños ocasionados o relacionados
+              con el presente contrato, sin importar la forma de acción judicial
+              o extrajudicial donde se determine una responsabilidad, ya sea
+              contractual o extracontractual, por negligencia, dolo o mala fe o
+              incumplimiento de garantías, en todos los casos estará limitada a
+              y nunca podrá exceder de, en forma acumulada por todos los
+              reclamos, acciones o causas de acción de cualquier tipo o
+              naturaleza, el total de la contraprestación pagada por el
+              <strong>&ldquo;cliente&rdquo;</strong> a
+              <strong>&ldquo;Highdata&rdquo;</strong> por el pedido de que se
+              trate, excluyendo impuestos y gastos. En ningún evento los daños a
+              ser pagados por <strong>&ldquo;Highdata&rdquo;</strong> podrán
+              incluir, y nunca podrá ser responsable por, cualquier monto por
+              pérdida de ingresos, ganancias o ahorros, perjuicios o daños
+              incidentales, indirectos, especiales, punitivos o consecuenciales,
+              incluyendo aquellos de terceras partes, aun cuando se haya avisado
+              acerca de la posibilidad de tales daños y/o perjuicios con
+              anticipación. Ningún reclamo, solicitud de mediación o arbitraje o
+              causa de acción derivada de un evento o eventos que hayan ocurrido
+              en un término mayor a un año a la fecha de la recepción de la
+              demanda o solicitud de mediación o arbitraje podrá ser utilizada o
+              reclamada por cualquiera de las partes en contra de la otra.
+              <strong>&ldquo;Highdata&rdquo;</strong> no responderá ni será
+              responsable por: 1) pérdida indirecta o consecuente; 2) pérdida de
+              negocio, salario, ingresos, ahorros; 3) daños remediados por
+              <strong>&ldquo;Highdata&rdquo;</strong> dentro de un tiempo
+              razonable; 4) pérdida que hubiese podido ser evitable mediante una
+              conducta razonable, incluyendo almacenamiento de datos en copias
+              de seguridad y seguimiento de las recomendaciones de
+              <strong>&ldquo;Highdata&rdquo;</strong>, en general; 5) artículos
+              excluidos de la garantía o fuerza mayor.
+            </p>
+            <h3>14&ndash; Productos de Terceros y Software.</h3>
+            <p>
+              Los Productos de Terceros y el Software que no sea propiedad de
+              <strong>&ldquo;Highdata&rdquo;</strong> se suministra bajo
+              licencia y garantía de su licenciante/fabricante.
+              <strong>&ldquo;Highdata&rdquo;</strong> adjuntará al
+              <strong>&ldquo;producto&rdquo;</strong> la licencia del Software
+              que Ud. solicite, cuando sea necesario. Ud. se obliga a cumplir
+              con los términos de esa licencia. Todo
+              <strong>&ldquo;software&rdquo;</strong> que se distribuya con el
+              <strong>&ldquo;producto&rdquo;</strong> o para él, para el que no
+              exista un contrato de licencia diferente entre Ud. y el fabricante
+              o propietario del <strong>&ldquo;software&rdquo;</strong>, se
+              regirá por el contrato de licencia de
+              <strong>&ldquo;software&rdquo;</strong> de
+              <strong>&ldquo;Highdata&rdquo;</strong> contenido en el documento
+              de Garantía Básica referenciado en el punto XX con el que Ud. se
+              obliga a cumplir.
+            </p>
+            <h3>15. Fuerza Mayor.</h3>
+            <p>
+              No aceptamos responsabilidad por demoras (incluyendo entregas o
+              servicios) causadas por circunstancias que escapen a nuestro
+              control razonable y tendremos en tal caso derecho a una prórroga
+              para su ejecución; incluyendo sin limitación, a las siguientes:
+              huelgas, problemas de transporte, suministro o producción,
+              fluctuaciones de tipos de cambio, acción gubernamental y desastres
+              naturales. Si la causa durase más de 2 meses, la transacción
+              podría ser terminada o resuelta por cualquier parte, sin derecho a
+              compensación.
+            </p>
+            <h3>16 &ndash; Obligaciones y responsabilidades del cliente:</h3>
+            <p>
+              1. Su propia elección del
+              <strong>&ldquo;producto&rdquo;</strong> y la idoneidad del
+              producto para un fin o propósito;<br />
+              2. Sus gastos de teléfono y correo, en su caso, para contactarse
+              con <strong>&ldquo;Highdata&rdquo;</strong>;<br />
+              3. Licencias y autorizaciones.<br />
+              Ud. facilitará información, cooperación, colaboración y acceso
+              suficientes para permitir a
+              <strong>&ldquo;Highdata&rdquo;</strong> cumplir con sus
+              compromisos, de lo contrario quedaremos exentos de nuestras
+              obligaciones. <strong>&ldquo;Ud&rdquo;</strong>. es responsable de
+              la creación de copias de seguridad y de la confidencialidad de los
+              datos contenidos en el Producto y del cumplimiento de cualquier
+              otro requisito legal.
+            </p>
+            <h3>17. Herramientas opcionales</h3>
+            <p>
+              Podemos proveer al usuario con acceso a herramientas de terceros
+              sobre las cuales no tenemos ningún control, monitoreo o acción o
+              entrada. Usted reconoce y acepta que nosotros le demos acceso a
+              aquellas herramientas <strong>&ldquo;como es&rdquo;</strong> y
+              <strong>&ldquo;a disponibilidad&rdquo;</strong> sin ninguna clase
+              de garantía, representación o condiciones de ningún tipo y sin
+              devoluciones. Nosotros no somos responsables por cualquier
+              situación relacionada con el uso por parte de
+              <strong>&ldquo;el usuario&rdquo;</strong> de estas herramientas
+              opcionales de terceros. Cualquier uso por parte de del
+              <strong>&ldquo;usuario&rdquo;</strong> de herramientas opcionales
+              ofrecidas en el sitio queda enteramente bajo el propio riesgo y
+              discreción del usuario, por lo que deberá de asegurarse de estar
+              familiarizado y estar de acuerdo con los términos de uso de las
+              herramientas provistas por los proveedores de terceros relevantes.
+              Además, podemos, en el futuro, ofrecer nuevos servicios y/ o
+              características a través de nuestro sitio (incluyendo la
+              publicación de nuevas herramientas y recursos). Estas
+              características y/o servicios estarán sujetas a estos
+              <strong>&ldquo;términos y condiciones&rdquo;</strong>.
+            </p>
+            <h3>18 &ndash; Vínculos de terceros</h3>
+            <p>
+              Algunos contenidos, productos y servicios disponibles a través de
+              nuestro <strong>&ldquo;servicio&rdquo;</strong> pueden incluir
+              materiales de terceros.<br />
+              Algunos vínculos de terceros en este sitio pueden dirigir al
+              <strong>&ldquo;usuario&rdquo;</strong> a sitios web de terceros
+              que no están afiliados con nosotros. No somos responsables de
+              examinar o evaluar el contenido o la precisión y no garantizamos
+              ni tendremos ninguna responsabilidad por cualquier material o
+              página web de un tercero o por cualquier otro material, producto o
+              servicio de terceros.<br />
+              No somos responsables por cualquier daño relacionado con la compra
+              o uso de bienes, servicios, recursos, contenido o cualquier otra
+              transacción realizada en relación a cualquier sitio web de
+              terceros. Favor de revisar cuidadosamente las políticas y
+              prácticas de terceros y asegúrese de entenderlas antes de
+              comprometerse en cualquier transacción. Cualquier queja, reclamo,
+              preocupación o pregunta relacionada con el uso de productos de
+              terceros deberán ser dirigidas al tercero.
+            </p>
+            <h3>
+              19 &ndash; Comentarios de los usuarios, retroalimentación y otras
+              presentaciones
+            </h3>
+            <p>
+              Si, bajo nuestra petición, usted envía alguna presentación
+              específica (por ejemplo, entradas a un concurso) o sin ninguna
+              petición por parte nuestra, usted nos envía ideas creativas,
+              sugerencias, propuestas, planes o cualquier otro material, ya sea
+              en línea, por correo electrónico, servicio postal o cualquier otro
+              medio, usted acepta que nosotros podremos, en cualquier momento,
+              sin ninguna restricción, editar, copiar, publicar, distribuir,
+              traducir y utilizar en cualquier medio, cualquier comentario que
+              nos envíe. No estamos obligados de ninguna forma a
+              <em
+                >(1) mantener cualquier comentario en confidencialidad, (2)
+                pagar compensaciones por ningún comentario, o (3) responder a
+                cualquier comentario</em
+              >.<br />
+              Podemos, pero no estamos obligados a, monitorear, editar o
+              eliminar contenido que determinemos, bajo nuestra discreción, sea
+              ilegal, ofensivo, amenazante, difamante, pornográfico, obsceno o
+              que de alguna manera viole propiedad intelectual o estos “términos
+              y condiciones”<br />
+
+              Usted está de acuerdo con que sus comentarios no violarán los
+              derechos de cualquier tercero, incluyendo derechos de autor,
+              marcas comerciales, privacidad, derechos personales o de
+              propiedad. Además, usted está de acuerdo con que sus comentarios
+              no contendrán material ilegal, obsceno o abusivo o contener
+              cualquier virus de computadora o cualquier otro “malware” que
+              podría afectar la operación de
+              <strong>&ldquo;el servicio&rdquo;</strong> o cualquier sitio web
+              relacionado. Usted no deberá utilizar una dirección de correo
+              electrónico falsa, fingir ser alguien diferente a usted, o
+              guiarnos de manera engañosa a terceros como el origen de los
+              comentarios. Usted es el único responsable por cualquier
+              comentario que realice y su precisión. Nosotros no tomamos ninguna
+              responsabilidad ni asumimos consecuencias por cualquier comentario
+              publicado por usted o un tercero.
+            </p>
+            <h3>20 &ndash; Información personal</h3>
+            <p>
+              La presentación de información personal a través de la tienda está
+              regida por nuestra
+              <strong>&ldquo;política de privacidad&rdquo;</strong>. Para ver
+              nuestra política de privacidad haga <em>click</em> en el siguiente
+              vínculo.
+              <a href="#politica-privacidad">Política de privacidad</a>.
+            </p>
+            <h3>21 &ndash; Errores, imprecisiones y omisiones</h3>
+            <p>
+              Ocasionalmente, podrá haber información en nuestro sitio o en el
+              servicio que contenga errores tipográficos, imprecisiones u
+              omisiones que pueden estar relacionadas a las descripciones de los
+              productos, los precios, promociones ofertas, cargos de envío de
+              productos, tiempos de entrega y disponibilidad. Nos reservamos el
+              derecho de corregir cualquier error, imprecisión u omisión y de
+              cambiar o actualizar en cualquier momento, sin previo aviso, la
+              información o cancelar órdenes si cualquier información en el
+              <strong>&ldquo;servicio&rdquo;</strong> o en cualquier página
+              relacionada es imprecisa o incorrecta.<br /><br />
+              Nosotros no tomamos ninguna obligación de actualizar, reparar o
+              clarificar información en el servicio o en cualquier sitio web
+              relacionado, incluyendo pero sin limitarse a, información de
+              precios, a excepción de los requerimientos de ley. Ninguna fecha
+              de actualización aplicada en el servicio o en cualquier sitio web
+              relacionado debe ser tomada como indicativo de que la información
+              en el servicio o cualquier página relacionada ha sido modificada o
+              actualizada.
+            </p>
+            <h3>22 &ndash; Usos prohibidos</h3>
+            <p>
+              Adicionalmente a otras prohibiciones establecidas en los “términos
+              y condiciones” queda prohibido al
+              <strong>&ldquo;usuario&rdquo;</strong> el uso de este sitio o su
+              contenido: a) con cualquier propósito ilegal, b) solicitar a otros
+              el realizar o participar en cualquier acto ilícito, c) violar
+              cualquier ley internacional, federal, estatal o local, d)
+              infringir o violar nuestra propiedad intelectual o la de otros, e)
+              acosar, abusar, insultar, dañar, difamar, desprestigiar,
+              intimidar, discriminar por género, orientación sexual, religión,
+              etnicidad, raza, edad, origen nacional o discapacidad, f)
+              presentar información falsa o engañosa, g) subir o transmitir
+              virus o cualquier otro tipo de código maligno que sea utilizado o
+              pueda ser utilizado de forma que afecte la funcionalidad o la
+              operación del <strong>&ldquo;servicio&rdquo;</strong> de cualquier
+              sitio web relacionado, otros sitios web, o el Internet, h)
+              recolectar o rastrear la información personal de otros, i)
+              realizar acciones de spam, phish, pharm, pretext, spider, crawl o
+              scrape, j) para cualquier propósito obsceno o inmoral o k), para
+              interferir o evitar las características de seguridad del
+              <strong>&ldquo;servicio&rdquo;</strong> o cualquier página
+              relacionada, otras páginas o el internet. Nos reservamos el
+              derecho de terminar su uso del
+              <strong>&ldquo;servicio&rdquo;</strong> o cualquier sitio
+              relacionado por violar cualquiera de los términos aquí
+              establecidos.
+            </p>
+            <h3>23 &ndash; Aviso de garantía, limitación de responsabilidad</h3>
+            <p>
+              No garantizamos, que el uso de nuestro servicio será
+              ininterrumpido, a tiempo, seguro o libre de errores.<br /><br />
+              No garantizamos que los resultados que sean obtenidos del uso del
+              servicio serán precisos o confiables.<br /><br />
+              Usted está de acuerdo con que ocasionalmente nosotros podemos
+              suspender el servicio por periodos indefinidos de tiempo o
+              cancelar el servicio en cualquier momento, sin dar previo aviso al
+              usuario. <br /><br />
+              <strong>&ldquo;el cliente&rdquo;</strong> acepta expresamente que
+              el uso o la imposibilidad de usar el servicio es bajo su propio
+              riesgo. El servicio y todos los productos y servicios entregados a
+              través del servicio son (salvo que así lo especifiquemos nosotros)
+              proporcionados <strong>&ldquo;tal como son&rdquo;</strong> y
+              <strong>&ldquo;a disponibilidad&rdquo;</strong> para su uso, sin
+              ninguna representación, garantía o condiciones de ningún tipo, ya
+              sea expresa o implícita, incluyendo todas las garantías implícitas
+              o condiciones de comerciabilidad, calidad comercial, idoneidad
+              para un propósito particular, durabilidad, título y no
+              infracción.<br /><br />
+              En ningún caso Highdata, nuestros directores, funcionarios,
+              empleados, afiliados, agentes, contratistas, practicantes,
+              proveedores, proveedores de servicios o licenciantes serán
+              responsables por cualquier tipo de daño directo, indirecto,
+              incidental, punitivo, especial, o daños consecuentes de cualquier
+              tipo, incluyendo, entre otros, pérdida de ganancias, pérdida de
+              ingresos, pérdida de ahorros, pérdida de datos, costos de
+              reemplazo o daños similares, ya sea por contrato, responsabilidad
+              extracontractual (incluida negligencia), responsabilidad estricta
+              o de otro tipo, que surjan de su uso de cualquiera de los
+              servicios o productos adquiridos mediante el servicio, o de
+              cualquier otro reclamo relacionado de alguna manera con su uso del
+              servicio o cualquier producto, incluidos, entre otros, cualquier
+              error u omisión en cualquier contenido, o cualquier pérdida o daño
+              de cualquier tipo incurrido como resultado del uso del servicio o
+              cualquier contenido (o producto) publicado, transmitido o puesto a
+              disposición a través del servicio, incluso si se informa de su
+              posibilidad. Debido a que algunos estados o jurisdicciones no
+              permiten la exclusión o la limitación de responsabilidad por daños
+              consecuentes o incidentales, en dichos estados o jurisdicciones,
+              nuestra responsabilidad se limitará a la extensión máxima
+              permitida por la ley.
+            </p>
+            <h3>24 &ndash; Indemnización</h3>
+            <p>
+              <strong>&ldquo;el usuario&rdquo;</strong> acepta indemnizar,
+              defender y mantener indemne a Highdata y a nuestros subsidiarias,
+              afiliados, socios, gerentes, directores agentes, contratistas,
+              licenciatarios, proveedores de servicios, subcontratistas,
+              proveedores, practicantes y empleados, de cualquier reclamo o
+              demanda, incluyendo honorarios de abogados, hechos por terceros
+              debido al incumplimiento del usuario de estos
+              <strong>&ldquo;términos y condiciones&rdquo;</strong> o los
+              documentos incorporados por referencia, o su violación de
+              cualquier ley o de los derechos de un tercero.
+            </p>
+            <h3>25 &ndash; Severidad</h3>
+            <p>
+              En el caso de que cualquier provisión de estos
+              <strong>&ldquo;términos y condiciones&rdquo;</strong> sea
+              determinada ilegal o nula, será cumplida a la mayor extensión
+              permitida por la legislación aplicable, y la parte que esté en
+              incumplimiento deberá ser anulada de estos términos y condiciones.
+              Aquella determinación no deberá afectar la validez de cualquier
+              otra provisión.
+            </p>
+            <h3>26 &ndash; Terminación</h3>
+            <p>
+              Las obligaciones y responsabilidades de las partes involucradas
+              antes de la fecha de vencimiento seguirán vigentes después de la
+              terminación de este acuerdo para todos los propósitos.<br /><br />
+              Estos <strong>&ldquo;términos y condiciones&rdquo;</strong> son
+              efectivos a menos que usted o nosotros los rescindamos. Usted
+              puede rescindir estos
+              <strong>&ldquo;términos y condiciones&rdquo;</strong> en cualquier
+              momento notificandonos que ya no desea utilizar nuestros servicios
+              o que deje de utilizar nuestro sitio.<br /><br />
+              Si a nuestro propio juicio,
+              <strong>&ldquo;el cliente&rdquo;</strong> falla, o nosotros
+              sospechamos que ha fallado en el cumplimiento de cualquier término
+              o disposición de estos
+              <strong>&ldquo;términos y condiciones&rdquo;</strong>, nosotros
+              podemos rescindir este acuerdo en cualquier momento y sin previo
+              aviso y <strong>&ldquo;el cliente&rdquo;</strong> seguirá siendo
+              responsable de todos los importes adeudados hasta e incluyendo la
+              fecha de terminación; en consecuencia, podremos denegar el acceso
+              a nuestros servicios (o parte de ellos).
+            </p>
+            <h3>27 &ndash; Acuerdo completo</h3>
+            <p>
+              El hecho de que no ejerzamos o hagamos valer ningún derecho o
+              disposición de estos
+              <strong>&ldquo;términos y condiciones&rdquo;</strong> no
+              constituirá una renuncia a dicho derecho o disposición.<br /><br />
+              Estos <strong>&ldquo;términos y condiciones&rdquo;</strong> y
+              cualquier política o regla de operación publicada por nosotros en
+              este sitio o en respecto a “el servicio” constituye el acuerdo
+              completo y el entendimiento entre
+              <strong>&ldquo;el cliente&rdquo;</strong> y nosotros y rigen el
+              uso del <strong>&ldquo;servicio&rdquo;</strong>, reemplazando
+              cualquier acuerdo, comunicación o propuesta anterior o
+              contemporánea, ya sea oral o escrito, entre usted y nosotros
+              (incluidas, entre otras, versiones anteriores de los
+              <strong>&ldquo;términos y condiciones&rdquo;</strong
+              >).<br /><br />
+              Cualquier ambigüedad en la interpretación de estos
+              <strong>&ldquo;términos y condiciones&rdquo;</strong> no se
+              interpretará en contra de la parte redactora.
+            </p>
+            <h3>28 &ndash; Jurisdicción</h3>
+            <p>
+              Estos <strong>&ldquo;términos y condiciones&rdquo;</strong> y
+              cualquier acuerdo por separado por el cual le proporcionemos
+              <strong>&ldquo;servicios&rdquo;</strong> se regirán e
+              interpretarán de conformidad con las leyes de los Estados Unidos
+              Mexicanos. Cualquier controversia se someterá a los tribunales y
+              tanto <strong>&ldquo;Highdata&rdquo;</strong> como el
+              <strong>&ldquo;cliente&rdquo;</strong>
+              renuncian a cualquier otro fuero que pudiera corresponderles en
+              razón de su domicilio presente o futuro.
+            </p>
+            <h3>29 &ndash; Cambios a los términos y condiciones</h3>
+            <p>
+              Usted puede revisar la versión más actual de los
+              <strong>&ldquo;términos y condiciones&rdquo;</strong> en cualquier
+              momento en esta página.<br /><br />
+              Nos reservamos el derecho, a nuestra discreción, de actualizar,
+              cambiar o reemplazar cualquier parte de estos
+              <strong>&ldquo;términos y condiciones&rdquo;</strong> mediante la
+              publicación de actualizaciones y cambios en nuestro sitio web. Es
+              su responsabilidad consultar nuestro sitio web de forma periódica
+              para conocer los cambios. El acceso o el uso continuo de nuestro
+              sitio web por parte de
+              <strong>&ldquo;el usuario&rdquo;</strong> después de la
+              publicación de cualquier cambio en estos
+              <strong>&ldquo;términos y condiciones&rdquo;</strong> constituye
+              la aceptación de estos cambios.
+            </p>
+            <h3>30 &ndash; Información de contacto</h3>
+            <p>
+              Las preguntas acerca de los
+              <strong>&ldquo;términos y condiciones&rdquo;</strong> deberán ser
+              enviadas a
+              <a href="mailto:cesar@highdatamx.com">cesar@highdatamx.com</a>.
+            </p>
+            <h2
+              id="declaracion-privacidad"
+              class="heading-primary heading-primary--main heading-primary--color-dark center-block mb-md"
+            >
+              Declaración de privacidad
+            </h2>
+            <h3>1 &ndash; Uso de la información</h3>
+            <p>
+              Cuando <strong>&ldquo;el usuario&rdquo;</strong> compra algo de
+              nuestra tienda, como parte del proceso de compra-venta, “nosotros”
+              recolectamos la información personal que nos proporciona
+              <strong>&ldquo;el usuario&rdquo;</strong>, la cual incluye pero no
+              se limita a, nombre, dirección, correo electrónico y teléfono.
+              <br /><br />
+              Cuando <strong>&ldquo;el usuario&rdquo;</strong> navega por
+              nuestra tienda, también recibimos automáticamente la dirección de
+              Protocolo de Internet (IP) de su computadora para proporcionarnos
+              información que nos ayude a conocer su navegador y su sistema
+              operativo. <br /><br />
+              Marketing por correo electrónico. Con su permiso, podemos enviarle
+              correos electrónicos sobre nuestra tienda, nuevos productos y
+              otras actualizaciones.
+            </p>
+            <h3>2 &ndash; Consentimiento</h3>
+            <p>
+              ¿Cómo se obtiene mi consentimiento?<br /><br />
+              Cuando <strong>&ldquo;el usuario&rdquo;</strong> nos proporciona
+              su información personal para completar una transacción, verificar
+              su tarjeta de crédito, realiza una compra, organiza una entrega o
+              devuelve una compra, damos a entender que acepta que la
+              recopilemos y la usemos únicamente para ese motivo específico.<br /><br />
+              Si solicitamos su información personal por una razón secundaria,
+              como marketing, le pediremos directamente su consentimiento
+              expreso o le brindaremos la oportunidad de negar dicho
+              consentimiento.<br /><br />
+              ¿Cómo retiro mi consentimiento?<br /><br />
+              Si después de inscribir sus datos, usted cambia de opinión, puede
+              retirar su consentimiento para que nos comuniquemos con usted,
+              para continuar la recopilación, uso o divulgación de su
+              información, en cualquier momento, poniéndose en contacto con
+              nosotros por correo electrónico a la siguiente dirección:<br /><br />
+              <a href="mailto:cesar@highdatamx.com">cesar@highdatamx.com</a>
+            </p>
+            <h3>3 &ndash; Divulgación</h3>
+            <p>
+              Podemos divulgar su información personal si la ley nos exige
+              hacerlo o si usted viola nuestros
+              <strong>&ldquo;términos y condiciones&rdquo;</strong>.
+            </p>
+            <h3>4 &ndash; Proveedor de servicio de cobro</h3>
+            <p>
+              Nuestra tienda en línea utiliza los servicios de Stripe. Ellos nos
+              proporcionan la plataforma de comercio electrónico en línea que
+              nos permite ofrecer y vender nuestros productos y servicios. Sus
+              datos se almacenan a través del almacenamiento de datos de Stripe,
+              las bases de datos y la aplicación general de Stripe. Ellos
+              almacenan su información en un servidor seguro, protegido por un
+              firewall.<br /><br />
+              Pago:<br /><br />
+              Si <strong>&ldquo;el usuario&rdquo;</strong> elige un portal de
+              pago para completar su compra, entonces Shopify almacenará los
+              datos de su tarjeta de crédito. Esta información será encriptada
+              mediante el estándar de seguridad de datos de la industria de
+              tarjetas de pago Payment Card Industry Security Standard
+              (PCI-DSS). Sus datos de transacción de compra se almacenan sólo el
+              tiempo necesario para completar su transacción de compra. Una vez
+              completado el proceso de transacción, se borrará la información de
+              su transacción de compra.<br /><br />
+              Todos los portales de pago directo se adhieren a los estándares
+              establecidos por PCI-DSS de acuerdo al Consejo de Estándares de
+              Seguridad de PCI (PCI Security Standards Council), el cual es un
+              esfuerzo conjunto de marcas como Visa, Mastercard, American
+              Express y Discover.<br /><br />
+              Los requerimientos de PCI-DSS ayudan a garantizar el manejo seguro
+              de la información de tarjetas de crédito por parte de nuestra
+              tienda y sus proveedores de servicios. Para obtener mayor
+              información, puede leer los Términos de Servicio de Stripe en las
+              siguientes ligas:<br /><br />
+            </p>
+            <h3>5 &ndash; Servicios de terceros</h3>
+            <p>
+              En general, los proveedores de terceros que utilicemos solo
+              recolectarán, utilizarán y divulgarán su información en la medida
+              necesaria para permitirles realizar los servicios que nos
+              brindan.<br /><br />
+              Sin embargo, ciertos proveedores de servicios de terceros, como lo
+              son portales de pago y otros procesadores de transacciones de
+              pago, tienen sus propias políticas de privacidad con respecto a la
+              información que debemos proporcionarles para sus transacciones
+              relacionadas con la compra.<br /><br />
+              Para estros proveedores, le recomendamos que lea sus políticas de
+              privacidad para que pueda entender la forma en que estos
+              proveedores manejarán su información personal.<br /><br />
+              En particular, recuerde que ciertos proveedores pueden estar
+              ubicados o tener sus instalaciones ubicadas en jurisdicciones
+              distintas a usted y/o a nosotros. Por lo tanto, si decide proceder
+              con una transacción que involucra los servicios de un proveedor de
+              servicios externo, entonces su información puede estar sujeta a
+              las leyes de las jurisdicciones en las que se encuentra ese
+              proveedor de servicios o sus instalaciones.<br /><br />
+              Como ejemplo, si se encuentra en México y su transacción es
+              procesada por un portal de pago ubicado en los Estados Unidos, su
+              información personal utilizada para completar esta transacción
+              puede estar sujeta a divulgación según la legislación de Estados
+              Unidos, incluida la ley Patriot (Patriot Act).<br /><br />
+              Una vez que <strong>&ldquo;el usuario&rdquo;</strong> abandona el
+              sitio web de nuestra tienda o es redireccionado a un sitio web o
+              aplicación de un tercero, ya no se rige por esta Política de
+              privacidad ni por los
+              <strong>&ldquo;términos y condiciones&rdquo;</strong> de nuestro
+              sitio web.<br /><br />
+              Hipervínculos:<br /><br />
+              Cuando <strong>&ldquo;el usuario&rdquo;</strong> hace clic en los
+              enlaces en nuestra tienda, pueden ser redirecionados fuera de
+              nuestro sitio. No somos responsables por las prácticas de
+              privacidad de otros sitios y alentamos al
+              <strong>&ldquo;usuario&rdquo;</strong> a leer sus declaraciones de
+              privacidad.
+            </p>
+            <h3>6 &ndash; Seguridad</h3>
+            <p>
+              Para proteger su información personal, tomamos precauciones
+              razonables y seguimos las mejores prácticas de la industria para
+              asegurarnos de que no se extravíe, abuse, acceda, revele, altere o
+              destruya de manera inapropiada.<br /><br />
+              Si nos proporciona la información de su tarjeta de crédito, la
+              información es encriptada con la tecnología de capa de conexión
+              segura secure socket layer technology (SSL) y se almacena con un
+              cifrado AES-256. A pesar de esto, ningún método de transmisión a
+              través de Internet o almacenamiento electrónico es 100% seguro,
+              cumplimos con todos los requisitos de PCI-DSS e implementamos
+              estándares adicionales aceptados por la industria.<br /><br />
+            </p>
+            <h3>9 &ndash; Edad de consentimiento</h3>
+            <p>
+              Al usar este sitio, usted declara que tiene al menos la mayoría de
+              edad en su estado o provincia de residencia, o que es mayor de
+              edad en su estado o provincia de residencia y nos ha dado su
+              consentimiento para permitir que cualquiera de sus dependientes
+              menores utilice este sitio.
+            </p>
+            <h3>10 &ndash; Cambios a la política de privacidad</h3>
+            <p>
+              Nos reservamos el derecho de modificar esta “política de
+              privacidad” en cualquier momento, por lo tanto, revísela con
+              frecuencia. Los cambios y aclaraciones tendrán efecto
+              inmediatamente después de su publicación en el sitio web. Si
+              realizamos cambios sustanciales a esta política le notificaremos
+              por este medio que se ha actualizado, de manera que usted estéa
+              enterado sobre qué información recopilamos, cómo la usamos y en
+              qué circunstancias.<br /><br />
+              Si nuestra tienda es adquirida o fusionada con otra empresa, su
+              información puede ser transferida a los nuevos propietarios para
+              que podamos continuar ofreciéndole productos.
+            </p>
+            <h3>Preguntas e información de contacto</h3>
+            <p>
+              Si desea: acceder, corregir, modificar o eliminar cualquier
+              información personal que tengamos sobre usted, registrar una queja
+              o simplemente solicitar mayor información, comuníquese con
+              nosotros en
+              <a href="mailto:cesar@highdatamx.com">cesar@highdatamx.com</a>.
+            </p>
+            <h2
+              id="poliza-garantia"
+              class="heading-primary heading-primary--main heading-primary--color-dark center-block mb-md"
+            >
+              Póliza de garantía
+            </h2>
+            <p>
+              Nuestra póliza de garantía tiene duración de 1 año. Si han pasado
+              365 días desde su compra, desafortunadamente no podemos ofrecerle
+              un cambio.<br /><br />
+              Para ser elegible para una devolución, su artículo debe estar sin
+              usar y en la misma condición en que lo recibió. También debe estar
+              en su empaque original.<br /><br />
+              Para completar su devolución, necesitamos un recibo o comprobante
+              de compra.<br /><br />
+              Favor de no devolver su compra al fabricante de los componentes de
+              su producto.
+            </p>
+            <h3>Reembolsos (si aplica)</h3>
+            <p>
+              Una vez que su artículo devuelto sea recibido e inspeccionado, le
+              enviaremos un correo electrónico para notificarle que hemos
+              recibido su artículo devuelto. Adicionalmente le notificaremos
+              sobre la aprobación o rechazo de su reembolso.<br /><br />
+              Si el reembolso es aprobado, entonces será procesado y se aplicará
+              un crédito automáticamente a su tarjeta de crédito o método de
+              pago original dentro de cierto periodo de tiempo.
+            </p>
+            <h3>Artículos con descuento (si aplica)</h3>
+            <br /><br />
+            <p>
+              Únicamente los artículos con precio regular serán sujetos a
+              reembolsos, desafortunadamente los artículos en descuento no
+              podrán ser reembolsados.
+            </p>
+            <h3>Cambios (si aplica)</h3>
+            <p>
+              Únicamente reemplazamos artículos defectuosos o dañados. Si
+              requiere que el producto sea cambiado por el mismo modelo,
+              envíenos un correo a
+              <a href="mailto:cesar@highdatamx.com">cesar@highdatamx.com</a
+              >.<br /><br />
+              Será responsabilidad del
+              <strong>&ldquo;cliente&rdquo;</strong> pagar por los gastos de
+              envío del retorno del artículo. Los costos de envío no son
+              reembolsables. Si usted recibe una devolución de dinero, los
+              costos de reenvío serán deducidos de la cantidad reembolsada.<br /><br />
+              Dependiendo de la ubicación de su domicilio, el tiempo de entrega
+              que puede tardar el producto cambiado puede variar.<br /><br />
+              Usted deberá considerar el uso de un servicio de envío rastreable
+              o un seguro de envío. Nosotros no garantizamos que recibiremos su
+              artículo devuelto.
             </p>
           </div>
         </div>
@@ -423,20 +1445,28 @@
         </p>
       </div>
       <nav class="footer__nav">
-        <ul class="footer__nav__menu">
-          <li>
-            <a href="#sobre-nosotros" class="footer__nav__menu__link"
+        <ul class="footer__nav__menu footer__links">
+          <li class="footer__item">
+            <a
+              class="footer__nav__menu__link footer__link"
+              href="#sobre-nosotros"
               >Sobre nosotros</a
             >
           </li>
-          <li>
-            <a href="#servicios" class="footer__nav__menu__link">Servicios</a>
+          <li class="footer__item">
+            <a class="footer__nav__menu__link footer__link" href="#servicios"
+              >Servicios</a
+            >
+          </li>
+          <li class="footer__item">
+            <a class="footer__nav__menu__link footer__link" href="#contacto"
+              >Contacto</a
+            >
           </li>
           <li>
-            <a href="#contacto" class="footer__nav__menu__link">Contacto</a>
-          </li>
-          <li>
-            <a href="#terminos-y-condiciones" class="footer__nav__menu__link"
+            <a
+              href="#terminos-y-condiciones"
+              class="footer__nav__menu__link footer__terms"
               >Términos y condiciones</a
             >
           </li>
@@ -448,15 +1478,20 @@
           nuestro WhatsApp!
         </p>
         <div class="footer__redes__icons">
-          <svg class="icon icon-facebook">
-            <use xlink:href="src/img/SVG/sprite.svg#facebook"></use>
-          </svg>
-          <svg class="icon icon-instagram">
-            <use xlink:href="src/img/SVG/sprite.svg#instagram"></use>
-          </svg>
-          <svg class="icon icon-whatsapp">
-            <use xlink:href="src/img/SVG/sprite.svg#whatsapp"></use>
-          </svg>
+          <a href="https://www.facebook.com"
+            ><svg class="icon icon-facebook">
+              <use xlink:href="src/img/SVG/sprite.svg#facebook"></use></svg
+          ></a>
+
+          <a href=""
+            ><svg class="icon icon-instagram">
+              <use xlink:href="src/img/SVG/sprite.svg#instagram"></use></svg
+          ></a>
+
+          <a href=""
+            ><svg class="icon icon-whatsapp">
+              <use xlink:href="src/img/SVG/sprite.svg#whatsapp"></use></svg
+          ></a>
         </div>
       </div>
     </footer>

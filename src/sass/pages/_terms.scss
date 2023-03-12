@@ -1,0 +1,36 @@
+.terminos {
+  color: $color-black;
+
+  &__content {
+    // display: grid;
+    overflow: auto;
+    // min-height: 50vh;
+    // max-height: 80vh;
+
+    &__text {
+      flex: 1;
+      height: 100%;
+      margin-top: 12rem;
+      // display: block;
+      // overflow-y: scroll;
+      & > h2 {
+      }
+      & > h3 {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+      }
+      & > p {
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 1.7;
+        margin-bottom: 2rem;
+
+        & > a {
+          color: $color-secondary;
+          text-decoration: none;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
