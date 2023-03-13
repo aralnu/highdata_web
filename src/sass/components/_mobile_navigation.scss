@@ -1,0 +1,22 @@
+.mobile-navigation {
+    
+    width: 100vw;
+    height: 110vh;
+    background-color: red;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+    to bottom right,
+    rgba($color-primary, 1),
+    rgba($color-tertiary, 1)
+  );
+  display: none;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(
+    12,
+    [col-start] minmax(min-content, 1fr) [col-end]
+  );
+    z-index: 300;
+    overflow: hidden;
+}

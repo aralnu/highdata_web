@@ -19,19 +19,26 @@
     grid-template-rows: minmax(min-content, 1fr);
     grid-column: 2 / -2;
     gap: 3.5rem;
+    @include respond(phone){
+      grid-template-columns: 1fr;
+      grid-template-rows: 3fr;
+      gap: 5rem
+    }
 
-    &--experiencia {
+    &--tecnologia {
       grid-column: 1 / 2;
       grid-row: 1;
       background-color: $color-background;
       border-radius: 1rem;
+      @include respond(phone){
+        grid-column: 1 / 4;
+      }
     }
 
-    &--tecnologia {
+    &--experiencia {
       grid-column: 2 / 3;
       grid-row: 1;
       background-color: $color-background;
-
       border-radius: 1rem;
     }
 
@@ -39,8 +46,10 @@
       grid-column: 3 / 4;
       grid-row: 1;
       background-color: $color-background;
-
       border-radius: 1rem;
+      @include respond(phone){
+        grid-column: 1 / 4;
+      }
     }
   }
 

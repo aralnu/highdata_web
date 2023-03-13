@@ -5,6 +5,10 @@
   margin: auto;
   $color-redes: $color-secondary;
   $size-redes: 6rem;
+  @include respond(phone){
+    width: 10rem;
+    height: 10rem;
+  }
 
   &-experience {
     margin-bottom: 2rem;
