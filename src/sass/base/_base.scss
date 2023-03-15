@@ -1,4 +1,90 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; //10px/16px = 62.5% 1 rem = 10px
+
+}
+
+.thanks_popup,
+.fail_popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(black,.95);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+    z-index: 300;
+}
+.thanks_popup_content,
+.fail_popup_content {
+    width: 60rem;
+    height: 25rem;
+    padding: 8rem 3rem 3rem 3rem;
+    background: black;
+    border-radius: 8px;
+    
+    animation: glow-box .8s infinite alternate;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    @include respond(phone){
+        width: 80%;
+        height: 40%;
+    }
+}
+@keyframes glow-box{
+    from{
+        box-shadow: inset 0 0 0rem .1rem rgba(white, .2),
+         0 0 1rem .2rem rgba(white, .2),
+        0 0 0rem .2rem rgba(white, .2),
+        0 0 0rem .1rem rgba(white, .2);
+    }
+    to{
+        box-shadow: inset 0 0 1rem .1rem rgba(white, .2),
+        0 0 1.2rem .3rem rgba(white, .2),
+        0 0 2.2rem .3rem rgba(white, .2),
+        0 0 3.2rem .3rem rgba(white, .2);
+    }
+}
+.thanks_popup_content h1,
+.fail_popup_content h1 {
+    
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.thanks_popup_content p,
+.fail_popup_content p {
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 400;
+    width: 90%;
+}
+
+.thanks_popup:target,
+.fail_popup:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup_close_button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.popup_logo{
+    position: absolute;
+    top: 1rem;
+    left: -1rem;
+    width: 25rem;
+    height: auto;
 }
