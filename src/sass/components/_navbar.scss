@@ -21,6 +21,9 @@
     //   display: flex;
     //   align-self: start;
     // }
+    @media only screen and (max-width: 46.87em) {
+      display: none;
+    }
 
     &__link:link,
     &__link:visited {
@@ -43,5 +46,12 @@
     width: 200px;
     // margin-top: 2rem;
     // margin-left: 8rem;
+    @media only screen and (max-width: $bp-mdlg) {
+      width: 150px;
+    }
+    @media only screen and (max-width: 46.87em) {
+      //750px
+      width: 125px;
+    }
   }
 }

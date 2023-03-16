@@ -30,6 +30,10 @@ body {
     animation-timing-function: ease-out;
     line-height: 6rem;
     text-shadow: 0.2rem 0.2rem 2rem rgba(black, 0.8);
+    @media only screen and (max-width: 53.125em) {
+      //850px
+      font-size: 4.5rem;
+    }
 
     /* other animation options:
       animation-delay: 3s; ----> animation takes n seconds to start

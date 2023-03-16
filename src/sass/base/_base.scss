@@ -1,4 +1,17 @@
+//RESPONSIVE BREAKPOINTS
+$bp-largest: 75em; //1200 px
+$bp-large: 62.5em; //1000px
+$bp-mdlg: 56.25em; //900px
+$bp-medium: 50em; //800px
+$bp-small: 37.5em; //600px
+
 html {
   box-sizing: border-box;
   font-size: 62.5%; //10px/16px = 62.5% 1 rem = 10px
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 50%;
+  }
+  @media only screen and (max-width: $bp-mdlg) {
+    font-size: 47.5%;
+  }
 }

@@ -36,6 +36,16 @@ html {
           box-sizing: border-box;
   font-size: 62.5%;
 }
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 47.5%;
+  }
+}
 
 @-webkit-keyframes moveInBottom {
   /*animation*/
@@ -129,6 +139,11 @@ body {
     animation-delay: 3s; ----> animation takes n seconds to start
     animation-iteration-count: 3; ---> animation occurs 3 times
     */
+}
+@media only screen and (max-width: 53.125em) {
+  .heading-primary--main {
+    font-size: 4.5rem;
+  }
 }
 .heading-primary--sub {
   font-size: 2.75rem;
@@ -255,6 +270,11 @@ body {
   gap: 4rem;
   list-style: none;
 }
+@media only screen and (max-width: 46.87em) {
+  .nav__menu {
+    display: none;
+  }
+}
 .nav__menu__link:link, .nav__menu__link:visited {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -274,6 +294,16 @@ body {
 }
 .nav__logo {
   width: 200px;
+}
+@media only screen and (max-width: 56.25em) {
+  .nav__logo {
+    width: 150px;
+  }
+}
+@media only screen and (max-width: 46.87em) {
+  .nav__logo {
+    width: 125px;
+  }
 }
 
 .btn, .btn:link, .btn:visited {
@@ -354,8 +384,8 @@ body {
 }
 
 .icon {
-  width: 6rem;
-  height: 6rem;
+  width: 6em;
+  height: 6em;
   display: block;
   margin: auto;
 }
@@ -369,18 +399,18 @@ body {
   margin-bottom: 2rem;
 }
 .icon-facebook {
-  width: 6rem;
-  height: 6rem;
+  width: 5em;
+  height: 5em;
   color: #ff4163;
 }
 .icon-instagram {
-  width: 6rem;
-  height: 6rem;
+  width: 5em;
+  height: 5em;
   color: #ff4163;
 }
 .icon-whatsapp {
-  width: 6rem;
-  height: 6rem;
+  width: 5em;
+  height: 5em;
   color: #ff4163;
 }
 
@@ -495,6 +525,11 @@ body {
   /* Handle */
   /* Handle on hover */
 }
+@media only screen and (max-width: 37.5em) {
+  .container {
+    padding: 0;
+  }
+}
 .container::-webkit-scrollbar {
   width: 1rem;
 }
@@ -549,6 +584,11 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media only screen and (max-width: 37.5em) {
+  .header__card {
+    gap: 4rem;
+  }
 }
 
 .footer {
@@ -645,6 +685,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 1.5rem;
 }
 .footer__redes__text {
   max-width: 70%;
@@ -667,16 +708,19 @@ body {
   background-color: #170133;
   color: #bb55f5;
 }
-.sobre-nosotros__card {
+.sobre-nosotros__box {
   display: grid;
   gap: 4rem;
   margin: auto 6rem auto 6rem;
-  height: 100%;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 }
-.sobre-nosotros__card > * {
+.sobre-nosotros__card {
   height: 100%;
-  width: 100%;
+}
+@media only screen and (max-width: 107.81em) {
+  .sobre-nosotros__card {
+    max-width: 39rem;
+  }
 }
 .sobre-nosotros__card--experiencia {
   background-color: #170133;
@@ -700,12 +744,11 @@ body {
   border-radius: 1rem;
 }
 .sobre-nosotros__cta {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  margin: auto;
 }
 
 .gradient-box {
+  height: 100%;
   margin: auto;
   background: -webkit-gradient(linear, left top, right top, from(#8febe8), to(#bb55f5));
   background: -o-linear-gradient(left, #8febe8, #bb55f5);
@@ -752,9 +795,15 @@ body {
 .servicios__servicio__textbox__text {
   margin-bottom: 1rem;
 }
-.servicios__servicio__img {
+.servicios__servicio__imgbox {
   background-color: rgba(187, 85, 245, 0.2);
   border-radius: 50%;
+  width: 30rem;
+  height: 30rem;
+}
+.servicios__servicio__img {
+  width: 30rem;
+  height: auto;
 }
 
 .servicios__servicio--1 {

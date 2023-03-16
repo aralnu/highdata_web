@@ -5,15 +5,8 @@
   }
 }
 .header {
-  // background-color: $color-background-light;
   display: flex;
   flex-direction: column;
-  // display: grid;
-  // grid-template-columns: repeat(12, 1fr);
-  // grid-template-rows: minmax(min-content, max-content);
-  // grid-column: 1 / -1;
-  // grid-row: 1 / -1;
-  // margin-left: 4rem;
   font-family: $font-header;
   background-image: linear-gradient(
       to bottom right,
@@ -42,5 +35,8 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    @media only screen and (max-width: $bp-small) {
+      gap: 4rem;
+    }
   }
 }

@@ -5,6 +5,11 @@
     rgba($color-tertiary, 1)
   );
   padding: 4rem;
+  @media only screen and (max-width: $bp-small) {
+    padding: 0;
+  }
+
+  // CUSTOM SCROLLBAR
 
   /* width */
   &::-webkit-scrollbar {
@@ -26,11 +31,4 @@
   &::-webkit-scrollbar-thumb:hover {
     background: rgba($color-background, 1);
   }
-}
-
-.subgrid {
-  // display: grid;
-  // grid-column: 1 / -1;
-  // grid-template-rows: minmax(min-content, 1fr);
-  // grid-template-columns: repeat(12, minmax(min-content, 1fr));
 }
