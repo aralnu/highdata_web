@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/aralnu/highdata_web/issues"
   },
-  "homepage": "https://github.com/aralnu/highdata_web#readme"
+  "homepage": "https://github.com/aralnu/highdata_web#readme",
+  "dependencies": {
+    "sass": "^1.59.3"
+  }
 }
