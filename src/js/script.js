@@ -4,12 +4,14 @@
 
 const btnScrollTo = document.querySelector(".btn--scroll-to");
 const section1 = document.querySelector("#sobre-nosotros");
-const navLink = document.querySelector(".nav__link");
 const navCheckbox = document.querySelector(".nav__checkbox");
+const navLinks = document.querySelector(".nav__links");
+const navLink = document.querySelector(".nav__link");
+const footerLinks = document.querySelector(".footer__links");
 
 //Smooth scrolling navbar
 
-document.querySelector(".nav__links").addEventListener("click", function (e) {
+navLinks.addEventListener("click", function (e) {
   e.preventDefault();
   //Matching strategy
   if (e.target.classList.contains("nav__link")) {
@@ -20,19 +22,17 @@ document.querySelector(".nav__links").addEventListener("click", function (e) {
 
 //smooth scrolling footer
 
-document
-  .querySelector(".footer__links")
-  .addEventListener("click", function (e) {
-    if (e.target.classList.contains("footer__terms")) {
-      return true;
-    } // this removes the prevent default line for the "terms and conditions" link in the footer nav, cause preventdefault breaks the popup opening
-    e.preventDefault();
-    //Matching strategy
-    if (e.target.classList.contains("footer__link")) {
-      const id = e.target.getAttribute("href");
-      document.querySelector(id).scrollIntoView({ behavior: "smooth" });
-    }
-  });
+footerLinks.addEventListener("click", function (e) {
+  if (e.target.classList.contains("footer__terms")) {
+    return true;
+  } // this removes the prevent default line for the "terms and conditions" link in the footer nav, cause preventdefault breaks the popup opening
+  e.preventDefault();
+  //Matching strategy
+  if (e.target.classList.contains("footer__link")) {
+    const id = e.target.getAttribute("href");
+    document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+  }
+});
 
 //Smooth scrolling button
 
@@ -45,7 +45,7 @@ btnScrollTo.addEventListener("click", function (e) {
 
 //Uncheck mobile navbar checkbox to hide mobile navbar and show section
 
-document.querySelector(".nav__links").addEventListener("click", function (e) {
+navLinks.addEventListener("click", function (e) {
   e.preventDefault();
   //Matching strategy
   if (e.target.classList.contains("nav__link")) {
