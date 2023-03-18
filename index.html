@@ -58,8 +58,8 @@
     <script defer src="src/js/script.js"></script>
   </head>
   <body class="container">
-    <header class="header header__background">
-      <nav class="nav">
+    <header class="header">
+      <div class="nav">
         <img
           src="/src/img/highdatalogo.png"
           alt="logo highdata"
@@ -68,21 +68,29 @@
         <!-- <svg class="nav__logo">
           <use xlink:href="src/img/SVG/highdata_logo.svg#highdata-logo"></use>
         </svg> -->
-        <ul class="nav__menu nav__links">
-          <li class="nav__menu__item nav__item">
-            <a class="nav__menu__link nav__link" href="#sobre-nosotros"
-              >Sobre Nosotros</a
-            >
-          </li>
-          <li class="nav__menu__item nav__item">
-            <a class="nav__menu__link nav__link" href="#servicios">Servicios</a>
-          </li>
-          <li class="nav__menu__item nav__item">
-            <a class="nav__menu__link nav__link" href="#contacto">Contacto</a>
-          </li>
-        </ul>
-      </nav>
-      
+        <input type="checkbox" class="nav__checkbox" id="navi-toggle" />
+        <label for="navi-toggle" class="nav__button"
+          ><span class="nav__icon">&nbsp;</span></label
+        >
+        <div class="nav__background">&nbsp;</div>
+        <nav class="nav__nav">
+          <ul class="nav__menu nav__links">
+            <li class="nav__menu__item nav__item">
+              <a class="nav__menu__link nav__link" href="#sobre-nosotros"
+                >Sobre Nosotros</a
+              >
+            </li>
+            <li class="nav__menu__item nav__item">
+              <a class="nav__menu__link nav__link" href="#servicios"
+                >Servicios</a
+              >
+            </li>
+            <li class="nav__menu__item nav__item">
+              <a class="nav__menu__link nav__link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
 
       <div class="header__card">
         <h1 class="heading-primary heading-primary--main mb-md">
