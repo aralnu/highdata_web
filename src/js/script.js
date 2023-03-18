@@ -4,6 +4,8 @@
 
 const btnScrollTo = document.querySelector(".btn--scroll-to");
 const section1 = document.querySelector("#sobre-nosotros");
+const navLink = document.querySelector(".nav__link");
+const navCheckbox = document.querySelector(".nav__checkbox");
 
 //Smooth scrolling navbar
 
@@ -39,4 +41,14 @@ btnScrollTo.addEventListener("click", function (e) {
   console.log(s1coords);
 
   section1.scrollIntoView({ behavior: "smooth" });
+});
+
+//Uncheck mobile navbar checkbox to hide mobile navbar and show section
+
+document.querySelector(".nav__links").addEventListener("click", function (e) {
+  e.preventDefault();
+  //Matching strategy
+  if (e.target.classList.contains("nav__link")) {
+    navCheckbox.checked = false;
+  }
 });
