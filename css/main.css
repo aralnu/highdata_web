@@ -69,7 +69,7 @@ html {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.85);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -102,12 +102,40 @@ html {
   }
 }
 
+.fail_popup_content_ok {
+  width: 60rem;
+  height: 25rem;
+  padding: 8rem 3rem 3rem 3rem;
+  background: #170133;
+  border-radius: 8px;
+  animation: glow-box-ok 0.8s infinite alternate;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+@media (max-width: 40.625em) {
+  .fail_popup_content_ok {
+    width: 80%;
+    height: 40%;
+  }
+}
+
 @keyframes glow-box {
   from {
     box-shadow: inset 0 0 0rem 0.1rem rgba(255, 65, 99, 0.2), 0 0 1rem 0.2rem rgba(255, 65, 99, 0.2), 0 0 0rem 0.2rem rgba(255, 65, 99, 0.2), 0 0 0rem 0.1rem rgba(255, 65, 99, 0.2);
   }
   to {
     box-shadow: inset 0 0 1rem 0.1rem rgba(255, 65, 99, 0.2), 0 0 1.2rem 0.3rem rgba(255, 65, 99, 0.2), 0 0 2.2rem 0.3rem rgba(255, 65, 99, 0.2), 0 0 3.2rem 0.3rem rgba(255, 65, 99, 0.2);
+  }
+}
+@keyframes glow-box-ok {
+  from {
+    box-shadow: inset 0 0 0rem 0.1rem rgba(143, 235, 232, 0.2), 0 0 1rem 0.2rem rgba(143, 235, 232, 0.2), 0 0 0rem 0.2rem rgba(143, 235, 232, 0.2), 0 0 0rem 0.1rem rgba(143, 235, 232, 0.2);
+  }
+  to {
+    box-shadow: inset 0 0 1rem 0.1rem rgba(143, 235, 232, 0.2), 0 0 1.2rem 0.3rem rgba(143, 235, 232, 0.2), 0 0 2.2rem 0.3rem rgba(143, 235, 232, 0.2), 0 0 3.2rem 0.3rem rgba(143, 235, 232, 0.2);
   }
 }
 .thanks_popup_content h1,
