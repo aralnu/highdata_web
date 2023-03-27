@@ -22,15 +22,21 @@
     margin: auto 6rem auto 6rem;
 
     // flex: 1;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(21.5rem, 1fr));
     // grid-template-rows: minmax(min-content, 1fr);
     // grid-column: 2 / -2;
     // gap: 3.5rem;
+    @media only screen and (max-width: $bp-mdlg) {
+      grid-template-columns: 1fr;
+    }
   }
   &__card {
     height: 100%;
     @media only screen and (max-width: 107.81em) {
-      max-width: 39rem;
+      // max-width: 39rem;
+    }
+    @media only screen and (max-width: $bp-mdlg) {
+      max-width: 50rem;
     }
     // & > * {
     //   height: 100%;

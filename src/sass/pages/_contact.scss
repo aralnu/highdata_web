@@ -13,11 +13,15 @@
   padding: 8rem 0;
   // padding: 8rem 8rem 8rem auto;
   justify-items: center;
-
+  @media only screen and (max-width: 37.5em) {
+    text-align: center;
+  }
   // &__text {
   //   // grid-column: 1 / -1;
   // }
-
+  &__heading {
+    max-width: 80%;
+  }
   &__form {
     justify-content: center;
     min-width: 45%;

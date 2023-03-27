@@ -18,14 +18,35 @@
     min-width: 60%;
     max-width: 80%;
     border-radius: 3.5rem;
+    @media only screen and (max-width: 50.63em) {
+      max-width: 90%;
+    }
+    @media only screen and (max-width: 37.5em) {
+      flex-direction: column;
+      max-width: 70%;
+    }
 
     &__textbox {
       margin: auto;
       margin-left: 4rem;
       margin-right: 4rem;
-
+      @media only screen and (max-width: 50.63em) {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+      @media only screen and (max-width: 37.5em) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
       &__text {
         margin-bottom: 1rem;
+        @media only screen and (max-width: 37.5em) {
+          text-align: center;
+        }
+      }
+      &__heading {
+        text-align: center;
       }
     }
 
@@ -34,11 +55,23 @@
       border-radius: 50%;
       width: 30rem;
       height: 30rem;
+      @media only screen and (max-width: 50.63em) {
+        align-self: center;
+        width: 25rem;
+        height: 25rem;
+        // transform: scale(1.25);
+      }
+      @media only screen and (max-width: 37.5em) {
+        margin-bottom: 2rem;
+      }
     }
 
     &__img {
       width: 30rem;
       height: auto;
+      @media only screen and (max-width: 50.63em) {
+        width: 25rem;
+      }
     }
   }
 
@@ -54,6 +87,8 @@
   //   );
   // }
 }
+
+// background gradient formula
 
 @for $i from 1 through 5 {
   .servicios__servicio--#{$i} {
@@ -73,4 +108,34 @@
     }
   }
   $i: $i + 1;
+}
+// background gradient for mobile
+.servicios__servicio {
+  @media only screen and (max-width: 37.5em) {
+    background-image: linear-gradient(
+      to top,
+      rgba($color-background, 1) 0%,
+      rgba($color-background, 0)
+    );
+  }
+}
+
+// image location formula
+
+@for $i from 1 through 5 {
+  .servicios__servicio__imgbox--#{$i} {
+    @if $i % 2 == 0 {
+      order: 1;
+    }
+    @if $i % 2 != 0 {
+      order: -1;
+    }
+  }
+  $i: $i + 1;
+}
+
+.servicios__servicio__imgbox {
+  @media only screen and (max-width: 37.5em) {
+    order: -1;
+  }
 }
