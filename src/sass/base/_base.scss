@@ -52,7 +52,7 @@ html {
     height: 40%;
   }
 }
-.fail_popup_content_ok {
+.thanks_popup_content_ok {
   width: 60rem;
   height: 25rem;
   padding: 8rem 3rem 3rem 3rem;
@@ -101,7 +101,8 @@ html {
 }
 
 .thanks_popup_content p,
-.fail_popup_content p {
+.fail_popup_content p,
+.thanks_popup_content_ok p {
   text-align: center;
   font-size: 1.7rem;
   font-weight: 400;
