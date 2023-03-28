@@ -33,15 +33,14 @@ html {
   transition: opacity 0.2s ease-in-out;
   z-index: 300;
 }
-.thanks_popup_content,
-.fail_popup_content {
+.thanks_popup_content {
   width: 60rem;
   height: 25rem;
   padding: 8rem 3rem 3rem 3rem;
   background: $color-background;
   border-radius: 8px;
 
-  animation: glow-box 0.8s infinite alternate;
+  animation: glow-box-ok 0.8s infinite alternate;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,14 +51,14 @@ html {
     height: 40%;
   }
 }
-.thanks_popup_content_ok {
+.fail_popup_content {
   width: 60rem;
   height: 25rem;
   padding: 8rem 3rem 3rem 3rem;
   background: $color-background;
   border-radius: 8px;
 
-  animation: glow-box-ok 0.8s infinite alternate;
+  animation: glow-box 0.8s infinite alternate;
   display: flex;
   flex-direction: column;
   align-items: center;
