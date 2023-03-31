@@ -402,6 +402,37 @@ body {
     text-shadow: none;
   }
 }
+.nav__menu__url:link, .nav__menu__url:visited {
+  display: inline-block;
+  flex: 1;
+  color: #f4f4f4;
+  text-decoration: none;
+  transition: all 0.6s;
+}
+@media only screen and (max-width: 46.87em) {
+  .nav__menu__url:link, .nav__menu__url:visited {
+    display: none;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #f4f4f4 50%);
+    width: 0;
+    background-size: 220%;
+    text-shadow: none;
+    color: transparent;
+  }
+}
+.nav__menu__url:hover, .nav__menu__url:active {
+  color: #ff4163;
+  transform: translateY(0.1rem);
+}
+@media only screen and (max-width: 46.87em) {
+  .nav__menu__url:hover, .nav__menu__url:active {
+    background-position: 100%;
+    color: #170133;
+    transform: translateX(1rem);
+    text-shadow: none;
+  }
+}
 .nav__logo {
   width: 20rem;
 }
