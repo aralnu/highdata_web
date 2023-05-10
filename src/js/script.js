@@ -8,6 +8,8 @@ const navCheckbox = document.querySelector(".nav__checkbox");
 const navLinks = document.querySelector(".nav__links");
 const navLink = document.querySelector(".nav__link");
 const footerLinks = document.querySelector(".footer__links");
+const popup = document.querySelector(".popup");
+const popupClose = document.querySelector(".popup__close");
 
 //Smooth scrolling navbar
 
@@ -53,5 +55,19 @@ navLinks.addEventListener("click", function (e) {
   //Matching strategy
   if (e.target.classList.contains("nav__link")) {
     navCheckbox.checked = false;
+  }
+});
+
+//Close popup when user clicks outside the popup window and hits escape
+const closePopup = function () {
+  popup.classList.add("hidden");
+};
+
+popup.addEventListener("click", closePopup());
+popupClose.addEventListener("click", closePopup());
+//Escape functionality
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape" && !popup.classList.contains("hidden")) {
+    closeModal();
   }
 });
