@@ -1,0 +1,40 @@
+.heading {
+  &-primary {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  font-family: $font-header;
+  background-image: linear-gradient(
+      to bottom right,
+      rgba($color-background, 0.8),
+      rgba($color-tertiary, 0.1)
+    ),
+    url("../src/img/house2.jpg");
+
+  height: 100vh;
+  padding: 6rem 6rem 0 6rem;
+  // width: 100%;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+
+  // -webkit-clip-path: polygon(0 0, 100% 0%, 100% 92.5%, 0% 100%);
+  // clip-path: polygon(0 0, 100% 0%, 100% 92.5vh, 0% 97.5vh);
+  // clip-path: polygon(0 0, 100% 0%, 100% 92.5vh, 0% 95vh);
+
+  &__card {
+    // grid-column: 2 / -1;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    @media only screen and (max-width: $bp-small) {
+      gap: 4rem;
+    }
+  }
+}

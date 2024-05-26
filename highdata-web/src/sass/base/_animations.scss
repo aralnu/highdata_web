@@ -1,0 +1,29 @@
+@keyframes moveInBottom {
+  /*animation*/
+  0% {
+    /*animation start*/
+    opacity: 0; /*start invisible*/
+    transform: translateY(10rem);
+  }
+
+  100% {
+    /*animation end*/
+    opacity: 1; /*visible 100% opacity*/
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInLeft {
+  /*animation*/
+  0% {
+    /*animation start*/
+    opacity: 0; /*start invisible*/
+    transform: translateX(5srem);
+  }
+
+  100% {
+    /*animation end*/
+    opacity: 1; /*visible 100% opacity*/
+    transform: translate(0);
+  }
+}

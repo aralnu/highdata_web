@@ -1,0 +1,163 @@
+body {
+  /*we reset the default text conditions*/
+  font-family: $font-primary, sans-serif;
+  font-weight: 300;
+  /*font-size: 16px;*/
+  line-height: 1.6;
+  color: $color-white;
+}
+
+.nav {
+  color: $color-white;
+  font-size: 2.2rem;
+  font-weight: 600;
+  text-shadow: 0.2rem 0.2rem 0.1rem rgba(black, 1);
+}
+
+.heading-primary {
+  // text-transform: uppercase;
+
+  // backface-visibility: hidden; /* fix shaking in animation*/
+  // margin-bottom: 6rem;
+
+  &--main {
+    font-size: 5.5rem;
+    font-weight: 900;
+    // letter-spacing: 1rem;
+
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    line-height: 6rem;
+    text-shadow: 0.2rem 0.2rem 2rem rgba(black, 0.8);
+    @media only screen and (max-width: 53.125em) {
+      //850px
+      font-size: 4.5rem;
+    }
+
+    /* other animation options:
+      animation-delay: 3s; ----> animation takes n seconds to start
+      animation-iteration-count: 3; ---> animation occurs 3 times
+      */
+  }
+
+  &--sub {
+    font-size: 2.75rem;
+    font-weight: 600;
+    // letter-spacing: 0.5rem;
+    color: $color-white;
+    text-transform: none;
+    text-shadow: 0.2rem 0.2rem 2rem rgba(black, 0.8);
+
+    animation: moveInBottom 1s ease-out; /* animation summarizes all the steps in heading-primary-main 
+      (name, duration, functin, etc)*/
+  }
+
+  &--color-primary {
+    color: rgba($color-primary, 1);
+  }
+
+  &--color-secondary {
+    color: $color-secondary;
+  }
+
+  &--color-tertiary {
+    color: $color-tertiary;
+  }
+
+  &--color-dark {
+    color: $color-background;
+    text-shadow: none;
+  }
+}
+
+.heading-secondary {
+  color: $color-tertiary;
+  // font-family: $font-header;
+  font-size: 2.3rem;
+  font-weight: 600;
+  // text-align: center;
+  // letter-spacing: 0.75rem;
+  // display: block;
+}
+
+.heading-tertiary {
+  color: $color-white;
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: 0.9rem;
+  display: inline;
+  text-align: center;
+}
+
+.heading-fourth {
+  color: $color-white;
+  font-size: 2.4rem;
+  font-weight: 700;
+  display: inline;
+}
+
+.btn {
+  color: $color-primary;
+  font-size: 2.75rem;
+  font-weight: 700;
+}
+
+// .gallery__text-box {
+//   &__text {
+//     color: $color-white;
+//     font-size: 1.5rem;
+//     font-weight: 700;
+//   }
+//   &__link {
+//     color: $color-white;
+//     font-size: 1.5rem;
+//     font-weight: 700;
+//   }
+// }
+
+.card-text {
+  color: $color-white;
+  font-size: 1.7rem;
+  font-weight: 600;
+  // font-family: $font-header;
+}
+
+.cta-contacto {
+  text-decoration: none;
+  color: $color-secondary;
+  font-size: 1.75rem;
+  font-weight: 600;
+
+  &:hover {
+    color: $color-primary;
+    box-shadow: 0 1rem 2rem rgba($color-background, 0.4);
+  }
+}
+
+.footer-text {
+  color: $color-white;
+  font-size: 1.75rem;
+  font-weight: 700;
+  // font-family: $font-header;
+}
+
+.footer__nav__menu__link {
+  color: $color-white;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 3rem;
+}
+
+.contacto__heading--sub {
+  font-size: 2.6rem;
+  font-weight: 600;
+  // letter-spacing: 0.5rem;
+  color: $color-white;
+  text-transform: none;
+  text-shadow: 0.2rem 0.2rem 2rem rgba(black, 0.8);
+}
+
+.popup__text {
+  color: rgba($color-background, 1);
+}

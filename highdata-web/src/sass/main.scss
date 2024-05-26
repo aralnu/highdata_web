@@ -1,0 +1,24 @@
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/base";
+@import "base/animations";
+@import "base/typography";
+@import "base/reset";
+
+@import "components/navbar";
+@import "components/button";
+@import "components/icons";
+@import "components/popup";
+
+@import "layout/container";
+@import "layout/header";
+@import "layout/footer";
+
+@import "pages/home";
+@import "pages/nosotros";
+@import "pages/servicios";
+@import "pages/contact";
+@import "pages/terms";
+// @import "vendors/_iconfont.css";

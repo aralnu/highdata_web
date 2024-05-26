@@ -1,0 +1,85 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    color: rgba($color-background, 1);
+    background: linear-gradient(
+      to right,
+      rgba($color-primary, 1),
+      rgba($color-tertiary, 1)
+    );
+    // background-color: $color-secondary;
+
+    text-decoration: none;
+
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 1.6rem;
+    transition: all 0.2s;
+    position: relative;
+
+    //change for the <button> element
+    border: none;
+    cursor: pointer;
+  }
+
+  &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba($color-background, 0.4); /* x value, y value, blur, color*/
+
+    &::after {
+      transform: scaleX(1.25) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active,
+  &:focus {
+    /*when clicked*/
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba($color-background, 0.2);
+  }
+
+  &--white {
+    background-color: $color-white;
+    color: $color-background;
+
+    &::after {
+      background-color: $color-white;
+    }
+  }
+
+  &--form {
+    background-color: $color-primary;
+    color: $color-background;
+    font-size: 2rem;
+    margin-top: 3rem;
+
+    &::after {
+      background-image: linear-gradient(
+        to right,
+        rgba($color-primary, 1),
+        rgba($color-tertiary, 1)
+      );
+    }
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+
+  &--animated {
+    animation: moveInBottom 1s ease-out 0.75s;
+    animation-fill-mode: backwards;
+  }
+}
